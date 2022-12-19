@@ -34,13 +34,13 @@ Steps to be followed to push the code to the repository:
 2. Push the code to the branch.
 3. Create a merge request to the master branch.
 
-   git push origin <branch_name>
-
-to push the code to the repository.
-
 To add remote "origin" to the repository
 
     git remote add origin https://gitlab.com/sudhinjyothis/flotanomers-web.git
+
+to push the code to the repository.
+
+    git push origin <branch_name>
 
 ## Configuring
 
