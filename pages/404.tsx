@@ -30,7 +30,7 @@ const E404 = () => {
                     Go to Home <i className="fas fa-angle-double-right" />
                   </a>
                 </Link>
-                <div className="follow-us">
+                {/* <div className="follow-us">
                   <h4>Follow Us</h4>
                   <div className="social-style-two">
                     <a href="#">
@@ -46,7 +46,7 @@ const E404 = () => {
                       <i className="fab fa-behance" />
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-7">

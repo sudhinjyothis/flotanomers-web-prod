@@ -331,8 +331,8 @@ const DefaultHeader = () => {
 const Menu = () => {
   return (
     <ul className="navigation clearfix">
-      <li className="dropdown">
-        <a href="#">Home</a>
+      <li>
+        <Link href={"/"}>Home</Link>
       </li>
       <li className="dropdown">
         <a href="#">services</a>
