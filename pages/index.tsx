@@ -36,7 +36,7 @@ const Index = () => {
                   <i className="flaticon-responsive" />
                   <h5>
                     <Link href="/service-details">
-                      <a>Responsive design</a>
+                      <a>Aerial Mapping & Surveying</a>
                     </Link>
                   </h5>
                 </div>
@@ -46,7 +46,7 @@ const Index = () => {
                   <i className="flaticon-feature" />
                   <h5>
                     <Link href="/service-details">
-                      <a>Powerful Customization</a>
+                      <a>Geographic Information System</a>
                     </Link>
                   </h5>
                 </div>
@@ -56,7 +56,7 @@ const Index = () => {
                   <i className="flaticon-aim" />
                   <h5>
                     <Link href="/service-details">
-                      <a>Cool &amp; modern animations</a>
+                      <a>Disaster Management</a>
                     </Link>
                   </h5>
                 </div>
@@ -66,7 +66,7 @@ const Index = () => {
                   <i className="flaticon-seo" />
                   <h5>
                     <Link href="/service-details">
-                      <a>SEO Friendly Coding</a>
+                      <a>Film & Photography</a>
                     </Link>
                   </h5>
                 </div>
@@ -76,7 +76,7 @@ const Index = () => {
                   <i className="flaticon-search-location" />
                   <h5>
                     <Link href="/service-details">
-                      <a>Best Technical supports</a>
+                      <a>Infrastructure Inspection</a>
                     </Link>
                   </h5>
                 </div>
@@ -86,7 +86,37 @@ const Index = () => {
                   <i className="flaticon-settings" />
                   <h5>
                     <Link href="/service-details">
-                      <a>Varied Layouts &amp; parallax</a>
+                      <a>Customized UAV's</a>
+                    </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="col wow fadeInUp delay-0-7s">
+                <div className="feature-item-five">
+                  <i className="flaticon-settings" />
+                  <h5>
+                    <Link href="/service-details">
+                      <a>3D Printing</a>
+                    </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="col wow fadeInUp delay-0-7s">
+                <div className="feature-item-five">
+                  <i className="flaticon-settings" />
+                  <h5>
+                    <Link href="/service-details">
+                      <a>Customized UAV's</a>
+                    </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="col wow fadeInUp delay-0-7s">
+                <div className="feature-item-five">
+                  <i className="flaticon-settings" />
+                  <h5>
+                    <Link href="/service-details">
+                      <a>UAV Services</a>
                     </Link>
                   </h5>
                 </div>
@@ -113,39 +143,68 @@ const Index = () => {
                 <div className="about-content-one wow fadeInUp delay-0-4s">
                   <div className="section-title mb-45">
                     <span className="sub-title mb-15">
-                      About digital solutions
+                      About Flotanomers R & D pvt ltd.
                     </span>
-                    <h2>Best web design solutions agency to growth</h2>
+                    <h2>Best Aerospace solutions agency to growth</h2>
                   </div>
                   <ul className="list-style-one">
                     <li>
                       <div className="content">
-                        <h4>Company Mission</h4>
-                        <p>
-                          Sit amet consectetur adipiscing elit, sed eiusmod
-                          tempor incididunt labore et dolore magna aliqua esuis
-                          suspendisse
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="content">
                         <h4>Company Vision</h4>
                         <p>
-                          Sit amet consectetur adipiscing elit, sed eiusmod
-                          tempor incididunt labore et dolore magna aliqua esuis
-                          suspendisse
+                          To become Bharath's leading and reliable ecosystem for
+                          aerial and robotic solutions
                         </p>
                       </div>
                     </li>
                     <li>
-                      <div className="content">
-                        <h4>Our Philosophy</h4>
+                      <div className="content mission">
+                        <h4>Company Mission</h4>
                         <p>
-                          Sit amet consectetur adipiscing elit, sed eiusmod
-                          tempor incididunt labore et dolore magna aliqua esuis
-                          suspendisse
+                          To provide safe, feasible, and solution-centric
+                          services by: <br />
                         </p>
+                        <ul style={{ marginTop: "1rem" }}>
+                          <li>
+                            <p>
+                              Providing employment by empowering the youth in
+                              drone-based solutions
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              Digitalising conventional systems through
+                              economical drone-based services
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              Indigenous development of UAV products to achieve
+                              Atmanirbhar Bharath
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="content mission">
+                        <h4>Our Values</h4>
+                        <ul style={{ marginTop: "1rem" }}>
+                          <li>
+                            <p>
+                              We encourage the team to grow boundlessly and
+                              explore new dimensions in their professional and
+                              personal lives.
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              We wholeheartedly believe in a “win-win” culture
+                              between our customers and the company.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                   </ul>
@@ -171,27 +230,47 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      <div className="counter-item style-two counter-text-wrap wow fadeInRight delay-0-3s">
+                      <div
+                        style={{ minHeight: "22rem" }}
+                        className="counter-item style-two counter-text-wrap wow fadeInRight delay-0-3s"
+                      >
                         <i className="flaticon-startup" />
-                        <Counter end={2365} decimals={undefined} />
-                        <span className="counter-title">Projects complete</span>
-                        <p>On the other denonce with righteous indin</p>
+                        <Counter end={10000} decimals={undefined} />
+                        <span className="counter-title">Sq Km Surveyed</span>
+                        <p>Andhra Pradesh Municipal Corporation , SOI, NHAI</p>
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      <div className="counter-item style-two counter-text-wrap wow fadeInRight delay-0-5s">
+                      <div
+                        style={{ minHeight: "22rem" }}
+                        className="counter-item style-two counter-text-wrap wow fadeInRight delay-0-5s"
+                      >
                         <i className="flaticon-global" />
-                        <Counter end={5234} decimals={undefined} />
-                        <span className="counter-title">Global Client’s</span>
-                        <p>On the other denonce with righteous indin</p>
+                        <Counter end={4000} decimals={undefined} />
+                        <span className="counter-title">Students Trained</span>
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      <div className="counter-item style-two counter-text-wrap wow fadeInRight delay-0-7s">
+                      <div
+                        style={{ minHeight: "22rem" }}
+                        className="counter-item style-two counter-text-wrap wow fadeInRight delay-0-7s"
+                      >
                         <i className="flaticon-rating" />
-                        <Counter end={8532} decimals={undefined} />
-                        <span className="counter-title">Happy Customer</span>
-                        <p>On the other denonce with righteous indin</p>
+                        <Counter end={5000} decimals={undefined} />
+                        <span className="counter-title">Training Hours</span>
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
+                      <div
+                        style={{ minHeight: "22rem" }}
+                        className="counter-item style-two counter-text-wrap wow fadeInRight delay-0-7s"
+                      >
+                        <i className="flaticon-rating" />
+                        <Counter end={200} decimals={undefined} />
+                        <span className="counter-title">
+                          Law And Enforcement Trained
+                        </span>
+                        <p>Cybersecurity, State Police, BSF, CRPF</p>
                       </div>
                     </div>
                   </div>
@@ -218,8 +297,8 @@ const Index = () => {
         <section className="design-feature-area overflow-hidden pt-130 pb-100 text-white bgc-black-with-lighting rel z-1">
           <div className="container">
             <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-              <span className="sub-title mb-10">Core Design Featured</span>
-              <h2>What we provider for website</h2>
+              <span className="sub-title mb-10">R & D</span>
+              <h2>Our Professional Products</h2>
             </div>
             <div className="row no-gap align-items-center">
               <div className="col-lg-3">
@@ -233,7 +312,7 @@ const Index = () => {
                         <div className="content">
                           <h4>
                             <Link href="/service-details">
-                              <a>Website Creation from Scratch</a>
+                              <a>Airdoe</a>
                             </Link>
                           </h4>
                           <Link href="/service-details">
@@ -252,7 +331,7 @@ const Index = () => {
                         <div className="content">
                           <h4>
                             <Link href="/service-details">
-                              <a>Website maintenance Services</a>
+                              <a>Wazp</a>
                             </Link>
                           </h4>
                           <Link href="/service-details">
@@ -270,11 +349,6 @@ const Index = () => {
                 <div className="feature-middle rmt-30">
                   <div className="image wow fadeInUp delay-0-2s">
                     <img
-                      className="circle-text"
-                      src="assets/images/shapes/feature-image-top.png"
-                      alt="Text"
-                    />
-                    <img
                       className="round"
                       src="assets/images/features/feature-middle.png"
                       alt="Feature Middle"
@@ -289,7 +363,7 @@ const Index = () => {
                         <div className="content">
                           <h4>
                             <Link href="/service-details">
-                              <a>eCommerce and product selling</a>
+                              <a>Skyper</a>
                             </Link>
                           </h4>
                           <Link href="/service-details">
@@ -308,7 +382,7 @@ const Index = () => {
                         <div className="content">
                           <h4>
                             <Link href="/service-details">
-                              <a>Responsive websites (UI/UX) design</a>
+                              <a>Flotaron</a>
                             </Link>
                           </h4>
                           <Link href="/service-details">
@@ -333,7 +407,7 @@ const Index = () => {
                         <div className="content">
                           <h4>
                             <Link href="/service-details">
-                              <a>Search Engine Optimization</a>
+                              <a>Cruise Copter</a>
                             </Link>
                           </h4>
                           <Link href="/service-details">
@@ -352,7 +426,7 @@ const Index = () => {
                         <div className="content">
                           <h4>
                             <Link href="/service-details">
-                              <a>User Experience and Design</a>
+                              <a>MultiFlot</a>
                             </Link>
                           </h4>
                           <Link href="/service-details">

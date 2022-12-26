@@ -5,10 +5,7 @@ import PageBanner from "../src/layout/PageBanner";
 const SingleBlog = () => {
   return (
     <Layout
-      header={undefined}
-      className={undefined}
-      footer={undefined}
-      noHeader={undefined}
+    header={1} className="home-one" footer={1} noHeader={undefined}
     >
       <PageBanner
         titleHtml={`Single <span>Blog</span>`}

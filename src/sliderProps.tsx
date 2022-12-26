@@ -55,7 +55,7 @@ export const feedbackActive = {
 export const teamSliderActive = {
   dots: true,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   arrows: false,
   speed: 1000,

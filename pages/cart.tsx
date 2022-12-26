@@ -23,10 +23,7 @@ const QuantityBtn = ({ defaultValue }) => {
 
 const Cart = () => {
   return (
-    <Layout header={undefined}
-    className={undefined}
-    footer={undefined}
-    noHeader={undefined}>
+    <Layout header={1} className="home-one" footer={1} noHeader={undefined}>
       <PageBanner
         titleHtml={`Shopping <span>Cart</span>`}
         titleText="Shopping Cart"

@@ -4,12 +4,7 @@ import PageBanner from "../src/layout/PageBanner";
 import React from "react";
 const Services = () => {
   return (
-    <Layout
-      header={undefined}
-      className={undefined}
-      footer={undefined}
-      noHeader={undefined}
-    >
+    <Layout header={1} className="home-one" footer={1} noHeader={undefined}>
       <PageBanner
         titleHtml={`Popular Se<span>rvices</span>`}
         titleText="Popular Services"

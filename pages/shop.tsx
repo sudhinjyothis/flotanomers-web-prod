@@ -14,10 +14,7 @@ const ShopIsotope = dynamic(
 const Shop = () => {
   return (
     <Layout
-      header={undefined}
-      className={undefined}
-      footer={undefined}
-      noHeader={undefined}
+    header={1} className="home-one" footer={1} noHeader={undefined}
     >
       <PageBanner titleHtml={`Our<span> Shop</span>`} titleText="Shop" />
       <section className="shop-page-area py-130 rel z-1">
