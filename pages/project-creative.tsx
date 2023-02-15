@@ -5,7 +5,7 @@ import React from "react";
 const ProjectsCreative = () => {
   return (
     <Layout
-    header={1} className="home-one" footer={1} noHeader={undefined}
+    header={1} className="" footer={1} noHeader={undefined}
     >
       <PageBanner
         titleHtml={`Project Cre<span>ative</span>`}

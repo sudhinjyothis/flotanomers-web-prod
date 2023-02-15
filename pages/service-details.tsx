@@ -31,7 +31,7 @@ const ServicesDetails = () => {
   };
   return (
     <Layout
-    header={1} className="home-one" footer={1} noHeader={undefined}
+    header={1} className="" footer={1} noHeader={undefined}
     >
       <PageBanner
         titleHtml={`Web Design &amp; Develop<span>ment</span>`}

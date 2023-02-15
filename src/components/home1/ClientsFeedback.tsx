@@ -32,6 +32,22 @@ export default class ClientsFeedback extends Component {
         },
       ],
     };
+    const data = [
+      {
+        image: "assets/images/feedback/testimonial1.jpg",
+        name: "John Doe",
+        designation: "CEO, Company",
+        feedback:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+      },
+      {
+        image: "assets/images/feedback/testimonial2.jpg",
+        name: "John Doe",
+        designation: "CEO, Company",
+        feedback:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. ",
+      },
+    ];
     return (
       <Fragment>
         <section className="testimonial-area-two rel z-1 mt-130 mb-120">
@@ -62,80 +78,22 @@ export default class ClientsFeedback extends Component {
               {...settings}
               ref={(c) => (this.slider = c)}
             >
-              <div className="testimonial-item-two wow fadeInUp delay-0-2s">
-                <div className="testimonial-author">
-                  <img
-                    src="assets/images/feedback/testimonial1.jpg"
-                    alt="Author"
-                  />
-                </div>
-                <div className="testimonial-content">
-                  <p>
-                    Sit amet consectetur adipiscing elit sed do eiusmod tempor
-                    incididunt ut labore dolore magna aliuasum susendise
-                    ultrices
-                  </p>
-                  <div className="author-description">
-                    <span className="h5">Jonathan B. Bohnert</span>
-                    <span className="designation">CEO &amp; Founder</span>
+              {data.map((item, i) => {
+                return (
+                  <div className="testimonial-item-two wow fadeInUp delay-0-2s">
+                    <div className="testimonial-author">
+                      <img src={item.image} alt="Author" />
+                    </div>
+                    <div className="testimonial-content">
+                      <p>{item.feedback}</p>
+                      <div className="author-description">
+                        <span className="h5">{item.name}</span>
+                        <span className="designation">{item.designation}</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="testimonial-item-two wow fadeInUp delay-0-4s">
-                <div className="testimonial-author">
-                  <img
-                    src="assets/images/feedback/testimonial2.jpg"
-                    alt="Author"
-                  />
-                </div>
-                <div className="testimonial-content">
-                  <p>
-                    Quis autem vel eum iure reprehe nderitue voluptate esseuam
-                    nihile molestias equatur veillum dolorem eum voluptas nulla
-                  </p>
-                  <div className="author-description">
-                    <span className="h5">Richard V. Dillingham</span>
-                    <span className="designation">Business Consultant</span>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial-item-two wow fadeInUp delay-0-2s">
-                <div className="testimonial-author">
-                  <img
-                    src="assets/images/feedback/testimonial1.jpg"
-                    alt="Author"
-                  />
-                </div>
-                <div className="testimonial-content">
-                  <p>
-                    Sit amet consectetur adipiscing elit sed do eiusmod tempor
-                    incididunt ut labore dolore magna aliuasum susendise
-                    ultrices
-                  </p>
-                  <div className="author-description">
-                    <span className="h5">Jonathan B. Bohnert</span>
-                    <span className="designation">CEO &amp; Founder</span>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial-item-two wow fadeInUp delay-0-4s">
-                <div className="testimonial-author">
-                  <img
-                    src="assets/images/feedback/testimonial2.jpg"
-                    alt="Author"
-                  />
-                </div>
-                <div className="testimonial-content">
-                  <p>
-                    Quis autem vel eum iure reprehe nderitue voluptate esseuam
-                    nihile molestias equatur veillum dolorem eum voluptas nulla
-                  </p>
-                  <div className="author-description">
-                    <span className="h5">Richard V. Dillingham</span>
-                    <span className="designation">Business Consultant</span>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </Slider>
           </div>
         </section>
