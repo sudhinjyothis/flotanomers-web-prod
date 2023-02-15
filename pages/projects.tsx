@@ -14,7 +14,7 @@ const ProjectGridIsotope = dynamic(
 const Projects = () => {
   return (
     <Layout
-    header={1} className="home-one" footer={1} noHeader={undefined}
+    header={1} className="" footer={1} noHeader={undefined}
     >
       <PageBanner
         titleHtml={`Project <span>Grid</span>`}

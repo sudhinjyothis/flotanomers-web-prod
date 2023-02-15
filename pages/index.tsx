@@ -7,7 +7,11 @@ import ClientsFeedback from "../src/components/home1/ClientsFeedback";
 import Hero1 from "../src/components/home1/Hero1";
 import RecentProjects from "../src/components/home1/RecentProjects";
 import Layout from "../src/layout/Layout";
+import { TbDrone } from "react-icons/tb";
+import { BiBuildings } from "react-icons/bi";
+import { TfiMapAlt } from "react-icons/tfi";
 const Index = () => {
+  const [hover, setHover] = React.useState(-1);
   return (
     <Fragment>
       <Head>
@@ -28,12 +32,25 @@ const Index = () => {
           <div className="container">
             <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
               <span className="sub-title mb-10">Core Features</span>
-              <h2>Amazing web design features</h2>
+              <h2>Amazing Aerial features</h2>
             </div>
-            <div className="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-              <div className="col wow fadeInUp delay-0-2s">
+            <div
+              style={{
+                cursor: "pointer",
+              }}
+              className="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+            >
+              <div
+                onMouseEnter={() => setHover(0)}
+                onMouseLeave={() => setHover(-1)}
+                className="col wow fadeInUp delay-0-2s"
+              >
                 <div className="feature-item-five">
-                  <i className="flaticon-responsive" />
+                  <TbDrone
+                    className={`hero-features-icon ${
+                      hover === 0 ? "hover" : ""
+                    }`}
+                  />
                   <h5>
                     <Link href="/service-details">
                       <a>Aerial Mapping & Surveying</a>
@@ -41,9 +58,17 @@ const Index = () => {
                   </h5>
                 </div>
               </div>
-              <div className="col wow fadeInUp delay-0-3s">
+              <div
+                onMouseEnter={() => setHover(1)}
+                onMouseLeave={() => setHover(-1)}
+                className="col wow fadeInUp delay-0-3s"
+              >
                 <div className="feature-item-five">
-                  <i className="flaticon-feature" />
+                  <TfiMapAlt
+                    className={`hero-features-icon ${
+                      hover === 1 ? "hover" : ""
+                    }`}
+                  />
                   <h5>
                     <Link href="/service-details">
                       <a>Geographic Information System</a>
@@ -51,72 +76,20 @@ const Index = () => {
                   </h5>
                 </div>
               </div>
-              <div className="col wow fadeInUp delay-0-4s">
+              <div
+                onMouseEnter={() => setHover(2)}
+                onMouseLeave={() => setHover(-1)}
+                className="col wow fadeInUp delay-0-6s"
+              >
                 <div className="feature-item-five">
-                  <i className="flaticon-aim" />
-                  <h5>
-                    <Link href="/service-details">
-                      <a>Disaster Management</a>
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col wow fadeInUp delay-0-5s">
-                <div className="feature-item-five">
-                  <i className="flaticon-seo" />
-                  <h5>
-                    <Link href="/service-details">
-                      <a>Film & Photography</a>
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col wow fadeInUp delay-0-6s">
-                <div className="feature-item-five">
-                  <i className="flaticon-search-location" />
+                  <BiBuildings
+                    className={`hero-features-icon ${
+                      hover === 2 ? "hover" : ""
+                    }`}
+                  />
                   <h5>
                     <Link href="/service-details">
                       <a>Infrastructure Inspection</a>
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col wow fadeInUp delay-0-7s">
-                <div className="feature-item-five">
-                  <i className="flaticon-settings" />
-                  <h5>
-                    <Link href="/service-details">
-                      <a>Customized UAV's</a>
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col wow fadeInUp delay-0-7s">
-                <div className="feature-item-five">
-                  <i className="flaticon-settings" />
-                  <h5>
-                    <Link href="/service-details">
-                      <a>3D Printing</a>
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col wow fadeInUp delay-0-7s">
-                <div className="feature-item-five">
-                  <i className="flaticon-settings" />
-                  <h5>
-                    <Link href="/service-details">
-                      <a>Customized UAV's</a>
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col wow fadeInUp delay-0-7s">
-                <div className="feature-item-five">
-                  <i className="flaticon-settings" />
-                  <h5>
-                    <Link href="/service-details">
-                      <a>UAV Services</a>
                     </Link>
                   </h5>
                 </div>
@@ -459,78 +432,6 @@ const Index = () => {
         {/* Project Area start */}
         <RecentProjects />
         {/* Project Area end */}
-        {/* Working Process Area start */}
-        <section className="work-process-area pb-95 rel z-1">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-10">
-                <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-                  <span className="sub-title mb-15">Working Process</span>
-                  <h2>How does we works</h2>
-                </div>
-              </div>
-            </div>
-            <div className="work-process-wrap rel z-1">
-              <div className="row justify-content-between">
-                <div className="col-xl-3 col-lg-5 col-sm-6">
-                  <div className="work-process-item mt-30 wow fadeInUp delay-0-2s">
-                    <div className="icon">
-                      <span className="number">01</span>
-                      <i className="flaticon-optimization" />
-                    </div>
-                    <h4>Info Gathering</h4>
-                    <p>
-                      Sit amet consectetur adipiscing elit sed eiusmod tempor
-                    </p>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-5 col-sm-6">
-                  <div className="work-process-item wow fadeInUp delay-0-4s">
-                    <div className="icon">
-                      <span className="number">02</span>
-                      <i className="flaticon-link" />
-                    </div>
-                    <h4>Idea Planning</h4>
-                    <p>
-                      Sit amet consectetur adipiscing elit sed eiusmod tempor
-                    </p>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-5 col-sm-6">
-                  <div className="work-process-item mt-55 wow fadeInUp delay-0-6s">
-                    <div className="icon">
-                      <span className="number">03</span>
-                      <i className="flaticon-data" />
-                    </div>
-                    <h4>Design Analysis</h4>
-                    <p>
-                      Sit amet consectetur adipiscing elit sed eiusmod tempor
-                    </p>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-5 col-sm-6">
-                  <div className="work-process-item mt-45 wow fadeInUp delay-0-8s">
-                    <div className="icon">
-                      <span className="number">04</span>
-                      <i className="flaticon-star" />
-                    </div>
-                    <h4>Testing &amp; Lunch</h4>
-                    <p>
-                      Sit amet consectetur adipiscing elit sed eiusmod tempor
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="work-process-shape">
-                <img
-                  src="assets/images/shapes/worp-process-step.png"
-                  alt="Shape"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Working Process Area end */}
         {/* CTA Area start */}
         <section className="call-to-action-area rel z-2">
           <div className="container">
@@ -559,7 +460,7 @@ const Index = () => {
                     <div className="icon">
                       <i className="flaticon-target" />
                     </div>
-                    <h4>We are to work SEO optimization ?</h4>
+                    <h4>Want to aerial survey any land ?</h4>
                     <Link href="/contact">
                       <a className="details-btn">
                         <i className="far fa-arrow-right" />
@@ -738,7 +639,15 @@ const Index = () => {
                       </div>
                       <div className="content">
                         <span className="title">Location</span>
-                        <b className="text">582 Main address, 2nd floor, USA</b>
+                        <b className="text">
+                          <a
+                            target={"_blank"}
+                            href="https://goo.gl/maps/tgM1K29a7chXTE7D8"
+                          >
+                            #1-156/1, 4th Floor Sahyadri campus, Adyar
+                            Mangaluru, Karnataka PIN-575007
+                          </a>
+                        </b>
                       </div>
                     </div>
                     <div className="contact-info-item">
@@ -748,8 +657,8 @@ const Index = () => {
                       <div className="content">
                         <span className="title">Email Address</span>
                         <b className="text">
-                          <a href="mailto:support@gmail.com">
-                            support@gmail.com
+                          <a href="mailto:info@flotanomers.com">
+                            info@flotanomers.com
                           </a>
                         </b>
                       </div>
@@ -761,7 +670,7 @@ const Index = () => {
                       <div className="content">
                         <span className="title">Phone No</span>
                         <b className="text">
-                          <a href="callto:+000(123)45699">+000 (123) 456 99</a>
+                          <a href="callto:+919449845967">+91 94498 45967</a>
                         </b>
                       </div>
                     </div>

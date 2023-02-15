@@ -54,3 +54,13 @@ html {
   padding: 0;
 }
 
+.hero-features-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #fc653c;
+  transition: color 0.4s ease-in-out;
+  margin-bottom: 2rem;
+}
+.hero-features-icon.hover {
+  color: #fff;
+}
