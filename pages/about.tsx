@@ -8,7 +8,7 @@ import { feedbackActive, teamSliderActive } from "../src/sliderProps";
 const About = () => {
   return (
     <Layout header={1} className="" footer={1} noHeader={undefined}>
-      <PageBanner titleHtml={`Abo<span>ut us</span>`} titleText="About" />
+      <PageBanner titleHtml={`About<span> Us</span>`} titleText="About Us" />
       <section className="ww-do-two-area py-130 rel z-1">
         <div className="container">
           <div className="row justify-content-between align-items-center">
