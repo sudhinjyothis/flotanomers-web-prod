@@ -10589,3 +10589,509 @@ h4.comment-title {
   padding-bottom: 10px;
   border-bottom: none;
 }
+
+
+/*******************************************************/
+/***************** TRAINING******************/
+/*******************************************************/
+@media screen and (max-width: 1108px) {
+
+  .main_container .mainBox .innerBox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_container .mainBox .innerBox .boxOne{
+    width: 50%;
+  }
+
+  /* .main_container{
+    height:280vh;
+  } */
+}
+.main_container{
+  width: 100vw;
+  /* height: 160vh; */
+}
+
+.main_container .mainBox{
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  padding: 2rem;
+  /* margin: auto; */
+  /* background: green; */
+}
+
+.main_container .mainBox .innerBox{
+  display: flex;
+  /* position: relative; */
+}
+
+.main_container .mainBox .innerBox .boxOne{
+  /* width: 25%; */
+  background-color: black;
+  border-radius:25px 0px 0px 25px;
+}
+
+.boxOne_boxTwo{
+  display: grid;
+  
+}
+
+.sideName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sideName h3{
+  font-size: 20px;
+  color: white;
+  width: 70%;
+  text-align: center;
+  /* padding-top: 10px; */
+}
+
+/* .boxOne{
+  position:relative;
+} */
+
+.boxOne .detTwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 20px; */
+}
+
+.boxOne .detTwo ul li a{
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.boxOne .detTwo ul li a:hover{
+  color: #0066ff;
+}
+
+/* .sideBarImg{
+  background-color: pink;
+  padding:10px ;
+}
+
+.sideBarImg img{
+  border-radius: 30%;
+} */
+
+.main_container .mainBox .innerBox .box2{
+  background-color: #F4E2D3;
+  /* width: 45%; */
+}
+
+.innerBoxOne{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .box2{
+  position: relative;
+} */
+.box2 .img1{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  column-gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.box2 .img1 img{
+  width: 40%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.box2 .textFormat{
+  width: 100%;
+  display: grid;
+  grid-column-gap: 10px;
+}
+
+
+.innerBox .box3{
+  background-color: #FFC614;
+  /* width: 45%; */
+  border-radius: 0px 25px 25px 0px;
+  /* position:relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 .imgBoxOne{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 .imgBoxOne img{
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+.box3 .contentDetails{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 .contentDetails .text{
+  width: 80%;
+  padding: 10px 0;
+}
+
+.box3 .contentDetails .makeText{
+  width: 80%;
+  margin-top: 20px;
+  font-weight: 100;
+  font-size: 13px;
+  
+}
+
+.box3 .contentDetails .sideBtn{
+  display: flex;
+  width: 80%;
+  padding: 20px 0;
+
+}
+
+.box3 .sideBtn button{
+  height: 50px;
+  padding: 10px 28px;
+  background: #322A7D;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+/* .textDetails .enrollDetails{
+  font-size: 13px;
+  color: black;
+}
+
+.textDetails .enrollDate{
+  font-size: 11px;
+  color:rgb(211, 211, 211)
+} */
+
+.innerBox .offersDivOne{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.innerBox .offersDivOne .offerOne{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  
+}
+
+.innerBox .offersDivOne .offerOne img{
+  width: 60px;
+  height: 60px;
+}
+
+.offerOne .offerDetails .pDetails{
+  font-size: 14px;
+  color: black;
+}
+
+.offerOne .offerDetails .startDetails{
+  font-size: 12px;
+  color: #0000005C;
+  font-weight: 500;
+}
+
+
+.box3 .end{
+  color: #0000005C;
+  font-style: normal;
+  /* width: 50%; */
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+}
+
+
+/*******************************************************/
+/***************** NEW OPPORTUNITIES******************/
+/*******************************************************/
+
+.new_opportunities{
+  width: 100vw;
+  height: 220vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 2rem;
+  margin: auto;
+  column-gap: 1.2rem;
+  /* background: blue; */
+}
+
+.new_opportunities .left_side_find{
+  width: 20%;
+  height: 75vh;
+  /* background: pink; */
+  padding-top: 1rem;
+  border: 0.12rem solid rgba(0, 0, 0, 0.14);
+  border-radius: 0.62rem;
+}
+
+.new_opportunities .left_side_find .filter{
+  display: flex;
+  justify-content: space-between;
+  /* background: green; */
+  padding: 0 1rem;
+}
+
+.new_opportunities .left_side_find .filter .filter_heading{
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+  font-family: 'Merriweather';
+}
+
+.new_opportunities .left_side_find .spacing{
+  padding: 1rem;
+}
+
+ select, textarea, .nice-select, .form-control {
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+  padding: 1rem 1.2rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.nice-select .list {
+  width: 100%;
+  border-radius: 0;
+}
+
+.nice-select .option {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: 0;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.nice-select {
+  border: solid 1px #e8e8e8;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-weight: 400;
+  outline: 0;
+  position: relative;
+  text-align: left;
+  transition: all .2s ease-in-out;
+  user-select: none;  
+  white-space: nowrap;
+}
+
+.spacing .location, .base_headingOne, .base_headingTwo{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+} 
+
+.location .labels, .spacing .base_headingOne h5,.spacing .base_headingTwo h5{
+  font-family: 'Merriweather';
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+/* .employment{
+  padding: 0 1rem;
+  display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 0.31rem;
+} */
+
+.spacing .employment label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: rgba(0, 0, 0, 0.36);
+  padding-left: 1rem;
+}
+
+.new_opportunities .right_side_find{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.right_side_find .findDiv{
+  margin-bottom: 2rem;
+}
+
+.right_side_find .findDiv, .right_side_find .job_roles{
+  border: 0.12rem solid rgba(0, 0, 0, 0.14);
+  border-radius: .62rem;
+}
+
+.right_side_find .findDiv input[type=text] {
+  width: 80%;
+  height: 20%;
+  padding: 1rem;
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+}
+
+.findDiv .innerDiv{
+  padding: 1rem;
+  display: flex;
+  column-gap: 2rem;
+}
+
+.findDiv .innerDiv button{
+  background: #322A7D;
+  border: none;
+  color: white;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 20%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.right_side_find .job_roles{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.right_side_find .job_roles .job_role_One{
+  background: rgba(217, 217, 217, 0.33);
+  border-radius: 0.62rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.job_roles .job_role_One .job_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.job_info .det_info{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  column-gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.job_info .det_info img{
+  width: 20%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.det_info .role{
+  width: 100%;
+  display: grid;
+  grid-column-gap: 0.6rem;
+}
+
+.det_info .role h6{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #000000;
+}
+
+.det_info .role .info_det{
+  display: flex;
+  justify-content: space-around;
+  /* padding: 2rem 0; */
+}
+
+.det_info .role .info_det h6{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.8rem;
+  color: #0000005C;
+  width: 50%;
+}
+
+.job_info .para p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.36);
+}
+
+.job_info .known_skills{
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  /* background: green; */
+}
+
+.known_skills .skills{
+  padding: 0.5rem 1rem;
+  background: #D9D9D9;
+  border-radius: 0.3rem;
+}
+
+
