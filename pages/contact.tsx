@@ -3,145 +3,188 @@ import PageBanner from "../src/layout/PageBanner";
 import React from "react";
 const Contact = () => {
   return (
-    <Layout
-    header={1} className="home-one" footer={1} noHeader={undefined}
-    >
+    <Layout header={1} className="" footer={1} noHeader={undefined}>
       <PageBanner titleHtml={`Conta<span>ct Us</span>`} titleText="Contact" />
       <section
         style={{
           position: "relative",
         }}
-        className="contact-area overflow-hidden py-130 bgc-black-with-lighting rel z-1"
+        className="contact-us-page-area py-130"
       >
         <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-xl-5 col-lg-6">
-              <div className="contact-info-area text-white rmb-75 wow fadeInLeft delay-0-2s">
-                <div className="section-title mb-55">
+          <div className="row align-items-end justify-content-between">
+            <div className="col-lg-7">
+              <div className="contact-content rmb-65 wow fadeInRight delay-0-2s">
+                <div className="section-title mb-25">
+                  <span className="sub-title style-two mb-15">Contact Us</span>
                   <h2>
-                    Have any project on mind! feel free contact with us or{" "}
-                    <span>say hello</span>
+                    Let’s Start New Project or work Together! Contact With us
                   </h2>
                 </div>
-                <div className="contact-info-wrap">
-                  <div className="contact-info-item">
-                    <div className="icon">
-                      <i className="fal fa-map-marker-alt" />
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque lauda tiumes totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                </p>
+                <form
+                  onSubmit={(e) => e.preventDefault()}
+                  id="contactForm"
+                  className="contactForm z-1 rel"
+                >
+                  <div className="row pt-15">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label htmlFor="name">Full Name</label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="Michael C. Coleman"
+                          required
+                          data-error="Please enter your name"
+                        />
+                        <div className="help-block with-errors" />
+                      </div>
                     </div>
-                    <div className="content">
-                      <span className="title">Location</span>
-                      <b className="text">582 Main address, 2nd floor, USA</b>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label htmlFor="email">Email Address</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="support@gmail.com"
+                          required
+                          data-error="Please enter your Email"
+                        />
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label htmlFor="phone_number">Phone Number</label>
+                        <input
+                          type="text"
+                          id="phone_number"
+                          name="phone_number"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="+000 (123) 456 88"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label htmlFor="select_subject">
+                          Select Requirments
+                        </label>
+                        <select name="select_subject" id="select_subject">
+                          <option value="default" selected>
+                            Website customize
+                          </option>
+                          <option value="Design">Design</option>
+                          <option value="Development">Development</option>
+                          <option value="SEO">SEO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <label htmlFor="message">Write Message</label>
+                        <textarea
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          rows={4}
+                          placeholder="Write Message"
+                          required
+                          data-error="Please enter your Message"
+                          defaultValue={""}
+                        />
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group pt-5 mb-0">
+                        <button type="submit" className="theme-btn w-100">
+                          Send Message{" "}
+                          <i className="fas fa-angle-double-right" />
+                        </button>
+                        <div id="msgSubmit" className="hidden" />
+                      </div>
                     </div>
                   </div>
-                  <div className="contact-info-item">
-                    <div className="icon">
-                      <i className="far fa-envelope-open-text" />
-                    </div>
-                    <div className="content">
-                      <span className="title">Email Address</span>
-                      <b className="text">
-                        <a href="mailto:support@gmail.com">support@gmail.com</a>
-                      </b>
-                    </div>
+                </form>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-5">
+              <div className="contact-info wow fadeInLeft delay-0-2s">
+                <div className="contact-info-item style-two">
+                  <div className="icon">
+                    <i className="fal fa-map-marker-alt" />
                   </div>
-                  <div className="contact-info-item">
-                    <div className="icon">
-                      <i className="far fa-phone" />
-                    </div>
-                    <div className="content">
-                      <span className="title">Phone No</span>
-                      <b className="text">
-                        <a href="callto:+000(123)45699">+000 (123) 456 99</a>
-                      </b>
-                    </div>
+                  <div className="content">
+                    <span className="title">Location</span>
+                    <span className="text">
+                      55 Main Street, 2nd Floor, E-Block, New York
+                    </span>
+                  </div>
+                </div>
+                <div className="contact-info-item style-two">
+                  <div className="icon">
+                    <i className="far fa-envelope-open-text" />
+                  </div>
+                  <div className="content">
+                    <span className="title">email address</span>
+                    <span className="text">
+                      <a href="mailto:support@gmail.com">
+                        supportweb@gmail.com
+                      </a>
+                      <br />
+                      <a href="mailto:websitebuilding.net">
+                        websitebuilding.net
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div className="contact-info-item style-two">
+                  <div className="icon">
+                    <i className="far fa-phone" />
+                  </div>
+                  <div className="content">
+                    <span className="title">Phone Number</span>
+                    <span className="text">
+                      Call <a href="calto:+000(123)45688">+000 (123) 456 88</a>
+                      <br />
+                      Whatsapp : +9632145789
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-xl-5 col-lg-6">
-              <form
-                onSubmit={(e) => e.preventDefault()}
-                id="contact-area-form"
-                className="contact-area-form text-center wow fadeInRight delay-0-2s"
-                name="contact-area-form"
-                action="#"
-                method="post"
-              >
-                <h4>Send us Message</h4>
-                <input
-                  type="text"
-                  id="full-name"
-                  name="full-name"
-                  className="form-control"
-                  defaultValue=""
-                  placeholder="Full Name"
-                  required
-                />
-                <input
-                  type="email"
-                  id="blog-email"
-                  name="blog-email"
-                  className="form-control"
-                  defaultValue=""
-                  placeholder="Email Address"
-                  required
-                />
-                <input
-                  type="text"
-                  id="website"
-                  name="website"
-                  className="form-control"
-                  defaultValue=""
-                  placeholder="Website"
-                  required
-                />
-                <textarea
-                  name="message"
-                  id="message"
-                  className="form-control"
-                  rows={5}
-                  placeholder="Write Message"
-                  required
-                  defaultValue={""}
-                />
-                <button type="submit" className="theme-btn">
-                  Send messages <i className="fas fa-angle-double-right" />
-                </button>
-              </form>
-            </div>
           </div>
-        </div>
-        <div className="contact-shapes">
-          <img
-            className="shape circle"
-            src="assets/images/shapes/slider-dots.png"
-            alt="Shape"
-          />
-          <img
-            className="shape dots"
-            src="assets/images/shapes/contact-dots.png"
-            alt="Shape"
-          />
-          <img
-            className="shape wave-line"
-            src="assets/images/shapes/contact-wave-line.png"
-            alt="Shape"
-          />
-        </div>
-        <div className="follow-us">
-          <div className="social-style-two">
-            <a href="#">
-              <i className="fab fa-facebook-f" />
-            </a>
-            <a href="#">
-              <i className="fab fa-twitter" />
-            </a>
-            <a href="#">
-              <i className="fab fa-linkedin-in" />
-            </a>
-            <a href="#">
-              <i className="fab fa-behance" />
-            </a>
+          <div style={{
+            bottom: "-2rem",
+          }} className="follow-us">
+           
+            <div className="social-style-two">
+              <a href="#">
+                <i className="fab fa-facebook-f" />
+              </a>
+              <a href="#">
+                <i className="fab fa-twitter" />
+              </a>
+              <a href="#">
+                <i className="fab fa-linkedin-in" />
+              </a>
+              <a href="#">
+                <i className="fab fa-behance" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -154,10 +197,7 @@ const Contact = () => {
             <div className="col-lg-4 col-md-6">
               <div className="location-address-item wow fadeInUp delay-0-4s">
                 <div className="top-part">
-                  <img
-                    src="assets/images/contact/2.jpg"
-                    alt="Location"
-                  />
+                  <img src="assets/images/contact/2.jpg" alt="Location" />
                   <h5>India Capital</h5>
                 </div>
                 <div className="bottom-part">

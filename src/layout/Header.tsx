@@ -26,7 +26,7 @@ const Header1 = () => {
                 <Link href="/">
                   <a>
                     <img
-                      src="assets/images/logos/logo-two.png"
+                      src="assets/images/logos/flot-logo.png"
                       alt="Logo"
                       title="Logo"
                     />
@@ -35,7 +35,7 @@ const Header1 = () => {
               </div>
             </div>
             <div className="nav-outer clearfix">
-              <MobileMenu logo={"assets/images/logos/logo-two.png"} />
+              <MobileMenu logo={"assets/images/logos/flot-logo.png"} />
               {/* Main Menu */}
               <nav className="main-menu d-none d-lg-block navbar-expand-lg">
                 <div className="navbar-header">
@@ -43,7 +43,7 @@ const Header1 = () => {
                     <Link href="/">
                       <a>
                         <img
-                          src="assets/images/logos/logo-two.png"
+                          src="assets/images/logos/flot-logo.png"
                           alt="Logo"
                           title="Logo"
                         />
@@ -88,7 +88,7 @@ const Header1 = () => {
             {/* Menu Button */}
             <div className="menu-btns">
               <Link href="/contact">
-                <a className="theme-btn style-three">
+                <a style={{color : "#FFF"}} className="theme-btn style-three">
                   Get a Quote <i className="fas fa-angle-double-right" />
                 </a>
               </Link>

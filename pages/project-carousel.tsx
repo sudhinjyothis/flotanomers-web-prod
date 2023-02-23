@@ -8,7 +8,7 @@ import React from "react";
 const ProjectsCarousel = () => {
   return (
     <Layout
-    header={1} className="home-one" footer={1} noHeader={undefined}
+    header={1} className="" footer={1} noHeader={undefined}
     >
       <PageBanner
         titleHtml={`Project Car<span>ousel</span>`}

@@ -23,13 +23,13 @@ const Hero1 = () => {
           <div className="container">
             <div className="slider-content">
               <span className="sub-title">
-                25 Years of Experience in web design solutions
+                5 Years of Experience in GIS Solutions
               </span>
-              <h1>Digital web design solutions agency</h1>
+              <h1>Innovative GIS Solutions for Your Business</h1>
               <div className="slider-btns">
                 <Link href="/contact">
                   <a className="theme-btn">
-                    Get Started Us <i className="fas fa-angle-double-right" />
+                    Get Started <i className="fas fa-angle-double-right" />
                   </a>
                 </Link>
                 <Link href="/services">
@@ -54,8 +54,8 @@ const Hero1 = () => {
             </a>
             <span className="video-title cd-headline clip">
               <span className="cd-words-wrapper">
-                <b className="is-visible">Web Design</b>
-                <b>Development</b>
+                <b className="is-visible">Aerial Mapping </b>
+                
               </span>
             </span>
           </div>
@@ -64,13 +64,13 @@ const Hero1 = () => {
           <div className="container">
             <div className="slider-content">
               <span className="sub-title">
-                25 Years of Experience in web design solutions
+                5 Years of Experience in GIS Solutions
               </span>
-              <h1>Digital web design solutions agency</h1>
+              <h1>Powering Decisions with GIS Data</h1>
               <div className="slider-btns">
                 <Link href="/contact">
                   <a className="theme-btn">
-                    Get Started Us <i className="fas fa-angle-double-right" />
+                    Get Started <i className="fas fa-angle-double-right" />
                   </a>
                 </Link>
                 <Link href="/services">
@@ -84,7 +84,7 @@ const Hero1 = () => {
           <div
             className="slider-video"
             style={{
-              backgroundImage: "url(assets/images/slider/slide2.jpg)",
+              backgroundImage: "url(assets/images/slider/slide2.webp)",
             }}
           >
             <a
@@ -95,8 +95,9 @@ const Hero1 = () => {
             </a>
             <span className="video-title cd-headline clip">
               <span className="cd-words-wrapper">
-                <b className="is-visible">Web Design</b>
-                <b>Development</b>
+                <b className="is-visible">Infrastructure</b>
+                <b className="is-visible">Inspection</b>
+                <b></b>
               </span>
             </span>
           </div>
@@ -105,13 +106,13 @@ const Hero1 = () => {
           <div className="container">
             <div className="slider-content">
               <span className="sub-title">
-                25 Years of Experience in web design solutions
+                5 Years of Experience in GIS Solutions
               </span>
-              <h1>Digital web design solutions agency</h1>
+              <h1>Unleashing the Potential of GIS</h1>
               <div className="slider-btns">
                 <Link href="/contact">
                   <a className="theme-btn">
-                    Get Started Us <i className="fas fa-angle-double-right" />
+                    Get Started <i className="fas fa-angle-double-right" />
                   </a>
                 </Link>
                 <Link href="/services">
@@ -125,7 +126,7 @@ const Hero1 = () => {
           <div
             className="slider-video"
             style={{
-              backgroundImage: "url(assets/images/slider/slide1.jpg)",
+              backgroundImage: "url(assets/images/slider/slide3.jpg)",
             }}
           >
             <a
@@ -136,8 +137,8 @@ const Hero1 = () => {
             </a>
             <span className="video-title cd-headline clip">
               <span className="cd-words-wrapper">
-                <b className="is-visible">Web Design</b>
-                <b>Development</b>
+                <b className="is-visible">GIS </b>
+              
               </span>
             </span>
           </div>

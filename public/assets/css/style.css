@@ -450,6 +450,7 @@ a.theme-btn.style-three {
   color: #293043;
   background: transparent;
   border: 1px solid rgba(0, 102, 255, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 @media only screen and (min-width: 576px) {
   .theme-btn.style-three,
@@ -5155,7 +5156,7 @@ h6,
   -ms-flex: none;
   flex: none;
   content: "\f101";
-  color: #FFF;
+  color: #fff;
   font-family: "Font Awesome 5 Pro";
 }
 
@@ -8740,7 +8741,6 @@ h6,
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  
 }
 .follow-us h4 {
   font-size: 22px;

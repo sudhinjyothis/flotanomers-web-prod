@@ -4,7 +4,7 @@ export const projectThreeActive = {
   autoplay: false,
   autoplaySpeed: 5000,
   arrows: false,
-  centerMode: false,
+  centerMode: true,
   speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 2,

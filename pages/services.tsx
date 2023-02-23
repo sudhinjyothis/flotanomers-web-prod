@@ -4,7 +4,7 @@ import PageBanner from "../src/layout/PageBanner";
 import React from "react";
 const Services = () => {
   return (
-    <Layout header={1} className="home-one" footer={1} noHeader={undefined}>
+    <Layout header={1} className="" footer={1} noHeader={undefined}>
       <PageBanner
         titleHtml={`Popular Se<span>rvices</span>`}
         titleText="Popular Services"
@@ -122,7 +122,7 @@ const Services = () => {
                 <span className="sub-title style-two mb-20">
                   Services We Provide
                 </span>
-                <h2>Popular Web Services</h2>
+                <h2>Popular Aerial Services</h2>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Services = () => {
                     alt="Service"
                   />
                 </div>
-                <h5>Website Creation from Figma, XD or Photoshop</h5>
+                <h5>Aerial Mapping & Surveying</h5>
                 <Link href="/service-details">
                   <a className="theme-btn style-three">
                     Service Details <i className="fas fa-angle-double-right" />
@@ -151,7 +151,7 @@ const Services = () => {
                     alt="Service"
                   />
                 </div>
-                <h5>Mobile App Development and Website Design</h5>
+                <h5>Geographic Information System</h5>
                 <Link href="/service-details">
                   <a className="theme-btn style-three">
                     Service Details <i className="fas fa-angle-double-right" />
@@ -167,55 +167,7 @@ const Services = () => {
                     alt="Service"
                   />
                 </div>
-                <h5>eCommerce and Product Selling Development</h5>
-                <Link href="/service-details">
-                  <a className="theme-btn style-three">
-                    Service Details <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-item-four wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/services/service-four4.png"
-                    alt="Service"
-                  />
-                </div>
-                <h5>Responsive Websites (UI/UX) Design</h5>
-                <Link href="/service-details">
-                  <a className="theme-btn style-three">
-                    Service Details <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-item-four wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img
-                    src="assets/images/services/service-four5.png"
-                    alt="Service"
-                  />
-                </div>
-                <h5>SEO (Search Engine Optimization)</h5>
-                <Link href="/service-details">
-                  <a className="theme-btn style-three">
-                    Service Details <i className="fas fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-item-four wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img
-                    src="assets/images/services/service-four6.png"
-                    alt="Service"
-                  />
-                </div>
-                <h5>Digital Product Design and Development</h5>
+                <h5>Infrastructure Inspection</h5>
                 <Link href="/service-details">
                   <a className="theme-btn style-three">
                     Service Details <i className="fas fa-angle-double-right" />

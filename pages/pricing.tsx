@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Nav, Tab } from "react-bootstrap";
 import Layout from "../src/layout/Layout";
 import PageBanner from "../src/layout/PageBanner";
-import React from "react";
+import React from "react"; 
 const Pricing = () => {
   return (
-    <Layout  header={1} className="home-one" footer={1} noHeader={undefined}>
+    <Layout  header={1} className="" footer={1} noHeader={undefined}>
       <PageBanner
         titleHtml={`Pricing <span>Plan</span>`}
         titleText="Pricing Plan"

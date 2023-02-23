@@ -5,7 +5,7 @@ import React from "react";
 const Checkout = () => {
   return (
     <Layout
-    header={1} className="home-one" footer={1} noHeader={undefined}
+    header={1} className="" footer={1} noHeader={undefined}
     >
       <PageBanner titleHtml={`Chec<span>kout</span>`} titleText="Checkout" />
       <div className="checkout-form-area py-130">
