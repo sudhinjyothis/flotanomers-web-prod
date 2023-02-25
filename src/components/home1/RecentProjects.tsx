@@ -16,12 +16,10 @@ const RecentProjects = () => {
         </div>
       </div>
       <Slider {...projectThreeActive} className="project-three-active">
+      <div></div>
         <div className="project-item style-two wow fadeInUp delay-0-2s">
           <div className="project-iamge">
-            <img
-              src="assets/images/projects/project-three1.jpg"
-              alt="Project"
-            />
+            <img src="assets/images/projects/1.webp" alt="Project" />
             <div className="project-over">
               <Link href="/project-details">
                 <a className="details-btn">
@@ -32,74 +30,13 @@ const RecentProjects = () => {
           </div>
           <div className="project-content">
             <h4>
-              <Link href="/project-details">Creative Website design</Link>
+              <Link href="/project-details">Muncipal Survey Project</Link>
             </h4>
-            <span className="category">Design Responsive</span>
+            <span className="category">Andhra Pradesh</span>
           </div>
         </div>
-        <div className="project-item style-two wow fadeInUp delay-0-4s">
-          <div className="project-iamge">
-            <img
-              src="assets/images/projects/project-three2.jpg"
-              alt="Project"
-            />
-            <div className="project-over">
-              <Link href="/project-details">
-                <a className="details-btn">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className="project-content">
-            <h4>
-              <Link href="/project-details">Software Landing Pages</Link>
-            </h4>
-            <span className="category">Design Responsive</span>
-          </div>
-        </div>
-        <div className="project-item style-two wow fadeInUp delay-0-6s">
-          <div className="project-iamge">
-            <img
-              src="assets/images/projects/project-three3.jpg"
-              alt="Project"
-            />
-            <div className="project-over">
-              <Link href="/project-details">
-                <a className="details-btn">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className="project-content">
-            <h4>
-              <Link href="/project-details">Mobile Application Design</Link>
-            </h4>
-            <span className="category">Design Responsive</span>
-          </div>
-        </div>
-        <div className="project-item style-two wow fadeInUp delay-0-8s">
-          <div className="project-iamge">
-            <img
-              src="assets/images/projects/project-three2.jpg"
-              alt="Project"
-            />
-            <div className="project-over">
-              <Link href="/project-details">
-                <a className="details-btn">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className="project-content">
-            <h4>
-              <Link href="/project-details">Software Landing Pages</Link>
-            </h4>
-            <span className="category">Design Responsive</span>
-          </div>
-        </div>
+       
+        <div></div>
       </Slider>
     </section>
   );

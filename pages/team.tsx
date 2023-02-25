@@ -13,7 +13,7 @@ const TeamIsotope = dynamic(
 const Team = () => {
   return (
     <Layout
-    header={1} className="home-one" footer={1} noHeader={undefined}
+    header={1} className="" footer={1} noHeader={undefined}
     >
       <PageBanner
         titleHtml={`Expert <span>Team</span>`}

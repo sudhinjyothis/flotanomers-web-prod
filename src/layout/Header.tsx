@@ -88,7 +88,7 @@ const Header1 = () => {
             {/* Menu Button */}
             <div className="menu-btns">
               <Link href="/contact">
-                <a className="theme-btn style-three">
+                <a style={{color : "#FFF"}} className="theme-btn style-three">
                   Get a Quote <i className="fas fa-angle-double-right" />
                 </a>
               </Link>
