@@ -10602,20 +10602,47 @@ h4.comment-title {
   }
 
   .main_container .mainBox .innerBox .boxOne{
-    width: 50%;
+    border-radius:25px;
   }
 
-  /* .main_container{
-    height:280vh;
-  } */
+  .innerBox .box3{
+    border-radius: 25px;
+  }
+
+  .innerBox .box2{
+    border-radius: 25px;
+  }
 }
+
+@media screen and (min-width: 1112px) {
+
+  .main_container .mainBox .innerBox .boxOne{
+    border-radius:25px 0px 0px 25px;
+  }
+
+  .innerBox .box3{
+    border-radius: 0px 25px 25px 0px;
+  }
+}
+
+@media screen and (max-width: 1098px) {
+
+  .main_container .mainBox .innerBox .boxOne{
+    margin-bottom: 2rem;
+  }
+
+  .innerBox .box2{
+    margin-bottom: 2rem;
+  }
+}
+
 .main_container{
   width: 100vw;
   /* height: 160vh; */
 }
 
 .main_container .mainBox{
-  height: 150vh;
+  /* height: 150vh; */
   display: flex;
   justify-content: center;
   /* position: absolute; */
@@ -10630,9 +10657,9 @@ h4.comment-title {
 }
 
 .main_container .mainBox .innerBox .boxOne{
-  /* width: 25%; */
+  min-width: 20%;
   background-color: black;
-  border-radius:25px 0px 0px 25px;
+  /* border-radius:25px 0px 0px 25px; */
 }
 
 .boxOne_boxTwo{
@@ -10687,7 +10714,7 @@ h4.comment-title {
 
 .main_container .mainBox .innerBox .box2{
   background-color: #F4E2D3;
-  /* width: 45%; */
+  min-width: 30%;
 }
 
 .innerBoxOne{
@@ -10723,7 +10750,7 @@ h4.comment-title {
 .innerBox .box3{
   background-color: #FFC614;
   /* width: 45%; */
-  border-radius: 0px 25px 25px 0px;
+  /* border-radius: 0px 25px 25px 0px; */
   /* position:relative; */
   display: flex;
   flex-direction: column;
@@ -10735,6 +10762,7 @@ h4.comment-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .box3 .imgBoxOne img{
@@ -10841,7 +10869,14 @@ h4.comment-title {
 /*******************************************************/
 /***************** NEW OPPORTUNITIES******************/
 /*******************************************************/
-@media screen and (max-width: 987px) {
+
+@media screen and (max-width: 1227px) {
+  .det_info .role .info_det{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1080px) {
   .new_opportunities{
     display: flex;
     flex-direction: column;
@@ -10850,7 +10885,38 @@ h4.comment-title {
   .findDiv{
     margin-top: 1.5rem;
   }
+
+  .role .info_det{
+    flex-direction: column;
+  }
 }
+
+@media screen and (max-width: 821px) {
+  .job_info .det_info{
+    flex-direction: column;
+  }
+
+  .job_info .det_info{
+    row-gap: 2rem;
+  }
+
+  .job_info .det_info img{
+    max-width: 50%;
+  }
+}
+
+/* @media screen and (max-width: 814px) {
+  .job_info .det_info img{
+    max-width: 30%;
+  }
+} */
+
+@media screen and (max-width: 657px) {
+  .job_info .det_info{
+    row-gap: 2rem;
+  }
+}
+
 .new_opportunities{
   width: 90vw;
   /* height: 220vh; */
@@ -11039,21 +11105,22 @@ h4.comment-title {
 .job_info .det_info{
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  /* width: 80%; */
   column-gap: 1.5rem;
   padding: 2rem 0;
 }
 
 .job_info .det_info img{
-  width: 20%;
+  width: auto;
   height: auto;
   border-radius: 0.5rem;
 }
 
 .det_info .role{
   width: 100%;
-  display: grid;
-  grid-column-gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
 }
 
 .det_info .role h6{
@@ -11067,7 +11134,7 @@ h4.comment-title {
 
 .det_info .role .info_det{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   /* padding: 2rem 0; */
 }
 
@@ -11076,9 +11143,9 @@ h4.comment-title {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.8rem;
+  /* line-height: 0.8rem; */
   color: #0000005C;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .job_info .para p{
