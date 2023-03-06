@@ -11446,3 +11446,13 @@ h4.comment-title {
 .application_form button:active{
   transform: translateY(4px)
 }
+
+/* ----------------------------------------------------------- */
+.checked{
+  color: #FFD687;
+}
+
+.vl{
+  border-left: 0.5px solid #C4C4C4  ;
+  height: 20px;
+}

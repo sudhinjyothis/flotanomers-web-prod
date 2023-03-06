@@ -1,13 +1,25 @@
 import Link from "next/link";
+import { DEFAULT_MAX_VERSION } from "tls";
 import { sideBarToggle } from "../utils";
 import MobileMenu from "./MobileMenu";
-
-const Header = ({ header }) => {
+import { FaInstagram } from 'react-icons/fa';
+import { FaFacebookF} from 'react-icons/fa';
+import {FaTwitter} from 'react-icons/fa';
+import {FaLinkedinIn} from 'react-icons/fa';
+import {FaRegEnvelope} from 'react-icons/fa';
+import {FaThLarge} from 'react-icons/fa';
+import {FaShoppingBag} from 'react-icons/fa';
+import {FaSearch} from 'react-icons/fa';
+import {TfiEmail} from "react-icons/tfi";
+import {BsTelephone} from "react-icons/bs";
+const Header = ({ header }) => {  
   switch (header) {
     case 1:
       return <Header1 />;
     case 2:
       return <Header2 />;
+    case 3:
+      return <Header3 />;
     default:
       return <DefaultHeader />;
   }
@@ -88,7 +100,7 @@ const Header1 = () => {
             {/* Menu Button */}
             <div className="menu-btns">
               <Link href="/contact">
-                <a style={{color : "#FFF"}} className="theme-btn style-three">
+                <a style={{ color: "#FFF" }} className="theme-btn style-three">
                   Get a Quote <i className="fas fa-angle-double-right" />
                 </a>
               </Link>
@@ -255,6 +267,101 @@ const Header2 = () => {
   );
 };
 
+const Header3 = () => {
+  return (
+    <div className="navbarOne flex flex-col px-10 py-3">
+      {/* <div>
+        <div className="hamburger inline-block p-4 cursor-pointer">
+          <div className="line h-0.5 w-6 my-1 bg-black"></div>
+          <div className="line h-0.5 w-6 my-1 bg-black"></div>
+          <div className="line h-0.5 w-6 my-1 bg-black"></div>
+        </div>
+      </div> */}
+      <div className="navbar-sub flex flex-row items-center justify-between">
+        <div className="social-icons flex space-x-5">
+          <a href="#">
+            <FaInstagram style={{ fill: 'gray' }}/>
+          </a>
+          <a href="#">
+            <FaFacebookF style={{ fill: 'gray' }}/>
+          </a>
+          <a href="#">
+            <FaTwitter style={{ fill: 'gray' }}/>
+          </a>
+          <a href="#">
+            <FaLinkedinIn style={{ fill: 'gray' }}/>
+          </a>
+        </div>
+        <div className="flex text-sm font-normal justify-around items-center space-x-3">
+          <div className="phone-number flex flex-row space-x-2 justify-center items-center">
+            <div><BsTelephone style={{ fill: 'orange' }}/></div>
+            <div>+12 345 6789 0</div>
+          </div>
+
+          <div className="email flex flex-row space-x-2 justify-center items-center">
+            <div><TfiEmail style={{ fill: 'orange' }}/></div>
+            <div>info@rcfinity.com</div>
+          </div>
+        </div>
+      </div>
+      <hr className="mt-3" />
+
+      <div className="forToggle">
+        <div className="navbarTwo mt-4 flex flex-row space-x-1 items-center justify-around">
+          <div className="logoName text-2xl font-semibold font-[Poppins] text-orange-500 ">RCFinity</div>
+          <div className="allIcons flex justify-between items-center space-x-6  ">
+          <div>
+            <a href="">
+            <FaThLarge style={{ fill: 'gray' }}/>
+            </a>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="searchBox relative">
+              <input
+                type="text"
+                className=" box h-14 w-96 pl-4 rounded-lg z-0 bg-gray-200 border border-1 border-gray-100"
+                placeholder="Search here"
+              />
+              <div className="absolute top-4 right-3">
+                <FaSearch style={{ fill: 'gray' }}/>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div className="relative">
+          <FaShoppingBag style={{ fill: 'gray' }}/>
+            <div className="absolute bottom-3 left-3 text-xs bg-orange-500 p-1 rounded-full text-white">99</div>
+          </div>
+          <div>
+            <FaRegEnvelope style={{ fill: 'gray' }}/>
+          </div>
+          <div className="text text-base underline text-orange-500 font-[Nunito Sans]">Sign In</div>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded">Sign Up</button>
+        </div>
+
+        <div className="mt-6">
+          <ul className="flex space-x-10 justify-center items-center">
+            <li>
+              <a href="#"  className="font-[Poppins] hover:text-orange-500">Home</a>
+            </li>
+            <li>
+              <a href="#" className="font-[Poppins] hover:text-orange-500">About</a>
+            </li>
+            <li>
+              <a href="#" className="font-[Poppins] hover:text-orange-500">Products</a>
+            </li>
+            <li>
+              <a href="#" className="font-[Poppins] hover:text-orange-500">Blogs</a>
+            </li>
+            <li>
+              <a href="#" className="font-[Poppins] hover:text-orange-500">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 const DefaultHeader = () => {
   return (
     <header className="main-header header-three menu-absolute">
