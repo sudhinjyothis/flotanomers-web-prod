@@ -1,5 +1,9 @@
 import Link from "next/link";
-
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
+import { BsTelephone } from "react-icons/bs";
 const Footer = ({ footer }) => {
   switch (footer) {
     case 1:
@@ -7,6 +11,8 @@ const Footer = ({ footer }) => {
     case 2:
       return <Footer2 />;
 
+    case 3:
+      return <Footer3 />;
     default:
       return <DefaultFooter />;
   }
@@ -233,6 +239,96 @@ const Footer2 = () => (
   </footer>
 );
 
+const Footer3 = () => (
+  <div className="footer-page">
+    <div className="two-divs mt-28 ">
+      <div className="footer-top bg-[#F46B5B] flex flex-col justify-center items-center pt-20 pb-16">
+        <div className="newsletter font-[Inter] font-bold text-white text-4xl">
+          Join our newsletter now !
+        </div>
+        <div className="register-info font-light text-base text-white mt-3">
+          Register now and getour latest updates and promos.{" "}
+        </div>
+        <div className="flex justify-center items-center">
+          <div className="searchBox relative mt-7">
+            <input
+              type="text"
+              className=" box h-16 w-96 pl-4 rounded-lg z-0 bg-white"
+              placeholder="Enter your email"
+            />
+            <div className="absolute top-2 right-3">
+              <button className="bg-black py-3 px-7 text-white rounded-2xl">
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom flex flex-col justify-center">
+        <div className="footer-left">
+          <div>RC Finity</div>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.{" "}
+          </div>
+          <div className="icons-social">
+            <a href="#">
+              <FaInstagram style={{ fill: "gray" }} />
+            </a>
+            <a href="#">
+              <FaFacebookF style={{ fill: "gray" }} />
+            </a>
+            <a href="#">
+              <FaTwitter style={{ fill: "gray" }} />
+            </a>
+          </div>
+        </div>
+        <div className="footer-right">
+          <div className="company-info">
+            <div>Company</div>
+            <div>About</div>
+            <div>Products</div>
+            <div>Contact</div>
+            <div>Blogs</div>
+            <div>Careers</div>
+          </div>
+
+          <div className="information-info">
+            <div>Information</div>
+            <div>Help Center</div>
+            <div>Payment Methods</div>
+            <div>Return & Refund</div>
+            <div>Return & Refund</div>
+          </div>
+
+          <div className="contact-info">
+            <div>Information</div>
+            <div>Help Center</div>
+            <div>Payment Methods</div>
+            <div>Return & Refund</div>
+            <div>Return & Refund</div>
+          </div>
+
+          <div className="flex flex-col text-sm font-normal justify-center items-center space-x-3">
+            <div className="phone-number flex flex-row space-x-2 justify-center items-center">
+              <div>
+                <BsTelephone style={{ fill: "orange" }} />
+              </div>
+              <div>+12 345 6789 0</div>
+            </div>
+
+            <div className="email flex flex-row space-x-2 justify-center items-center">
+              <div>
+                <TfiEmail style={{ fill: "orange" }} />
+              </div>
+              <div>info@rcfinity.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
 const DefaultFooter = () => (
   <footer className="main-footer pt-80">
     <div className="container">

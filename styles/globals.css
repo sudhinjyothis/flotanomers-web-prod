@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 html {
   scroll-behavior: smooth !important;
@@ -64,3 +68,4 @@ html {
 .hero-features-icon.hover {
   color: #fff;
 }
+

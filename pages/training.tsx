@@ -8,7 +8,6 @@ export default function Training() {
       <section className="main_container">
         <div className="mainBox">
             <div className="innerBox">
-                <div className="boxOne_boxTwo" >
                 <div className="boxOne">
                     <div className="sideBarDet">
                         <div className="sideName">
@@ -67,7 +66,6 @@ export default function Training() {
                     </div>
                     </div>
                     
-                </div>
                 </div>
 
                 <div className="box3">

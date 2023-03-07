@@ -9,7 +9,7 @@ import Header from "./Header";
 import ScrollTop from "./ScrollTop";
 import SideBar from "./SideBar";
 
-const Layout = ({ children, header, className, footer, noHeader }) => {
+const Layout = ({ children, header, className, footer, noHeader, SideBar}) => {
   useEffect(() => {
     animation();
     document.querySelector("body").className = className
@@ -31,7 +31,8 @@ const Layout = ({ children, header, className, footer, noHeader }) => {
       <ImageView />
       <div className="page-wrapper">
         {!noHeader && <Header header={header} />}
-        <SideBar />
+       {SideBar && <SideBar/>}
+
         {children}
         {!footer && <CallToAction />}
         <Footer footer={footer} />
