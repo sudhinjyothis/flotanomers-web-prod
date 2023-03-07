@@ -7,12 +7,8 @@ export default function Document() {
     <Html>
       <Head>
         <meta charSet="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="/favicon.png" />
-        <link
-          rel="shortcut icon"
-          href="assets/images/favicon.png"
-          type="image/x-icon"
-        />
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+        
         <link rel="stylesheet" href="assets/css/flaticon.min.css" />
 
         <link

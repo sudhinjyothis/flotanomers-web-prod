@@ -1,17 +1,12 @@
+import { blogData } from "../../../src/utils";
 import Link from "next/link";
 import React from "react";
-import Layout from "../src/layout/Layout";
-import PageBanner from "../src/layout/PageBanner";
-import { blogData } from "../src/utils";
-const SingleBlog = () => {
+import Layout from "../../../src/layout/Layout";
+import PageBanner from "../../../src/layout/PageBanner";
+export default function blogDetail({ blog }) {
   return (
-    <Layout
-    header={1} className="" footer={1} noHeader={undefined}
-    >
-      <PageBanner
-        titleHtml={`<span>Blog</span>`}
-        titleText="Blog"
-      />
+    <Layout header={1} className="" footer={1} noHeader={undefined}>
+      <PageBanner titleHtml={`<span>Blog</span>`} titleText="Blog" />
       <section className="blog-details-area py-130 rel z-1">
         <div className="container">
           <div className="row medium-gap">
@@ -23,10 +18,7 @@ const SingleBlog = () => {
                     alt="Blog Single"
                   />
                 </div>
-                <h3>
-                  Make your own website and get built-in tools to grow your
-                  business online
-                </h3>
+                <h3>{blog.title}</h3>
                 <ul className="blog-meta mt-20 pb-30">
                   <li>
                     <img
@@ -353,11 +345,7 @@ const SingleBlog = () => {
                     action="#"
                     className="default-search-form"
                   >
-                    <input
-                      type="text"
-                      placeholder="Find Keywords"
-                      required
-                    />
+                    <input type="text" placeholder="Find Keywords" required />
                     <button
                       type="submit"
                       className="searchbutton far fa-search"
@@ -488,5 +476,19 @@ const SingleBlog = () => {
       {/* Blog Details Area end */}
     </Layout>
   );
-};
-export default SingleBlog;
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { id: blogData[0].id } }],
+    fallback: false, // can also be true or 'blocking'
+  };
+}
+
+// `getStaticPaths` requires using `getStaticProps`
+export async function getStaticProps(context) {
+  return {
+    // Passed to the page component as props
+    props: { blog: blogData[0] },
+  };
+}

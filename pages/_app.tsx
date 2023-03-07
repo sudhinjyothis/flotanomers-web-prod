@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
-        <title>Oxence - Web Design Company React NextJS Template</title>
+        <title>Flotanomers | Mangalore, India</title>
       </Head>
       {load && <PreLoader />}
       <Component {...pageProps} />
