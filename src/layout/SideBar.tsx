@@ -23,7 +23,7 @@ const SideBar = () => {
                   name="text"
                   defaultValue=""
                   placeholder="Name"
-                  required=""
+                  required
                 />
               </div>
               <div className="form-group">
@@ -32,7 +32,7 @@ const SideBar = () => {
                   name="email"
                   defaultValue=""
                   placeholder="Email Address"
-                  required=""
+                  required
                 />
               </div>
               <div className="form-group">

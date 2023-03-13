@@ -12,7 +12,6 @@ const ProgressBar = ({ value, color, extraCls }) => {
     >
       <h3>{value}%</h3>
       <CircularProgressbar
-        width={130}
         value={value}
         strokeWidth={5}
         styles={buildStyles({
