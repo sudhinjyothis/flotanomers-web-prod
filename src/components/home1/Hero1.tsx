@@ -54,8 +54,8 @@ const Hero1 = () => {
             </a>
             <span className="video-title cd-headline clip">
               <span className="cd-words-wrapper">
-                <b className="is-visible">Aerial Mapping </b>
-                
+                <b className="is-visible">Infrastructure</b>
+                <b className="is-visible">Inspection</b>
               </span>
             </span>
           </div>
@@ -95,9 +95,7 @@ const Hero1 = () => {
             </a>
             <span className="video-title cd-headline clip">
               <span className="cd-words-wrapper">
-                <b className="is-visible">Infrastructure</b>
-                <b className="is-visible">Inspection</b>
-                <b></b>
+                <b className="is-visible">GIS </b>
               </span>
             </span>
           </div>
@@ -137,8 +135,7 @@ const Hero1 = () => {
             </a>
             <span className="video-title cd-headline clip">
               <span className="cd-words-wrapper">
-                <b className="is-visible">GIS </b>
-              
+                <b className="is-visible"> Aerial Mapping</b>
               </span>
             </span>
           </div>

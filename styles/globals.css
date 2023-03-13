@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 *,
 html {
@@ -61,7 +58,7 @@ html {
 .hero-features-icon {
   width: 4rem;
   height: 4rem;
-  color: #fc653c;
+  color: #ffc614;
   transition: color 0.4s ease-in-out;
   margin-bottom: 2rem;
 }

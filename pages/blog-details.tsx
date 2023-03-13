@@ -2,14 +2,15 @@ import Link from "next/link";
 import React from "react";
 import Layout from "../src/layout/Layout";
 import PageBanner from "../src/layout/PageBanner";
+import { blogData } from "../src/utils";
 const SingleBlog = () => {
   return (
     <Layout
     header={1} className="" footer={1} noHeader={undefined}
     >
       <PageBanner
-        titleHtml={`Single <span>Blog</span>`}
-        titleText="Single Blog"
+        titleHtml={`<span>Blog</span>`}
+        titleText="Blog"
       />
       <section className="blog-details-area py-130 rel z-1">
         <div className="container">

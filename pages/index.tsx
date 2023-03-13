@@ -10,19 +10,18 @@ import Layout from "../src/layout/Layout";
 import { TbDrone } from "react-icons/tb";
 import { BiBuildings } from "react-icons/bi";
 import { TfiMapAlt } from "react-icons/tfi";
+import { blogData } from "../src/utils";
 const Index = () => {
   const [hover, setHover] = React.useState(-1);
   return (
     <Fragment>
-      <Head>
-        {" "}
-        <link
-          rel="shortcut icon"
-          href="assets/images/favicon1.png"
-          type="image/x-icon"
-        />
-      </Head>
-      <Layout header={1} className="home-one" footer={1} noHeader={undefined}>
+      <Layout
+        header={1}
+        className="home-one"
+        footer={1}
+        noHeader={undefined}
+        SideBar={null}
+      >
         {/*End Hidden Sidebar */}
         {/* Slider Section Start */}
         <Hero1 />
@@ -104,7 +103,7 @@ const Index = () => {
             <div className="row justify-content-between align-items-center">
               <div className="col-lg-5">
                 <div className="about-image-one bg-squire-shape rmb-85 wow fadeInUp delay-0-2s">
-                  <img src="assets/images/about/about-one.jpg" alt="About us" />
+                  <img src="assets/images/hero/mission.webp" alt="About us" />
                   <img
                     className="image-left"
                     src="assets/images/shapes/image-left.png"
@@ -173,8 +172,8 @@ const Index = () => {
                           </li>
                           <li>
                             <p>
-                              We wholeheartedly believe in a “win-win” culture
-                              between our customers and the company.
+                              We wholeheartedly believe in a â€œwin-winâ€
+                              culture between our customers and the company.
                             </p>
                           </li>
                         </ul>
@@ -199,7 +198,7 @@ const Index = () => {
                         <span className="sub-title mb-15">
                           Company Statistics
                         </span>
-                        <h2>We’ve some achievement from global partners</h2>
+                        <h2>We have some achievement from global partners</h2>
                       </div>
                     </div>
                     <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
@@ -251,10 +250,7 @@ const Index = () => {
               </div>
               <div className="col-lg-5">
                 <div className="statistics-three-image bg-squire-shape mb-30 wow fadeInLeft delay-0-3s">
-                  <img
-                    src="assets/images/about/statictics.jpg"
-                    alt="Statictics"
-                  />
+                  <img src="assets/images/hero/success.jpg" alt="Statictics" />
                   <img
                     className="image-right"
                     src="assets/images/shapes/image-right.png"
@@ -270,8 +266,8 @@ const Index = () => {
         <section className="design-feature-area overflow-hidden pt-130 pb-100 text-white bgc-black-with-lighting rel z-1">
           <div className="container">
             <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-              <span className="sub-title mb-10">R & D</span>
-              <h2>Our Professional Products</h2>
+              <span className="sub-title mb-10">Product Developments</span>
+              <h2>Our Products</h2>
             </div>
             <div className="row no-gap align-items-center">
               <div className="col-lg-3">
@@ -280,7 +276,7 @@ const Index = () => {
                     <div className="col-lg-12 col-sm-6">
                       <div className="service-item style-three wow fadeInRight delay-0-2s">
                         <div className="icon">
-                          <i className="flaticon-design" />
+                          <img src="assets/images/mockups/airdoe.webp" alt="" />
                         </div>
                         <div className="content">
                           <h4>
@@ -299,7 +295,7 @@ const Index = () => {
                     <div className="col-lg-12 col-sm-6">
                       <div className="service-item style-three wow fadeInRight delay-0-3s">
                         <div className="icon">
-                          <i className="flaticon-web-page" />
+                          <img src="assets/images/mockups/wazp.png" alt="" />
                         </div>
                         <div className="content">
                           <h4>
@@ -323,7 +319,7 @@ const Index = () => {
                   <div className="image wow fadeInUp delay-0-2s">
                     <img
                       className="round"
-                      src="assets/images/features/feature-middle.png"
+                      src="assets/images/features/feature-middle.jpg"
                       alt="Feature Middle"
                     />
                   </div>
@@ -331,7 +327,7 @@ const Index = () => {
                     <div className="col-sm-6">
                       <div className="service-item style-three wow fadeInUp delay-0-3s">
                         <div className="icon">
-                          <i className="flaticon-online" />
+                          <img src="assets/images/mockups/skyper.webp" alt="" />
                         </div>
                         <div className="content">
                           <h4>
@@ -350,7 +346,10 @@ const Index = () => {
                     <div className="col-sm-6">
                       <div className="service-item style-three mt-30 wow fadeInUp delay-0-4s">
                         <div className="icon">
-                          <i className="flaticon-web-programming" />
+                          <img
+                            src="assets/images/mockups/flotaron.jpg"
+                            alt=""
+                          />
                         </div>
                         <div className="content">
                           <h4>
@@ -375,7 +374,10 @@ const Index = () => {
                     <div className="col-lg-12 col-sm-6">
                       <div className="service-item style-three mt-100 wow fadeInLeft delay-0-2s">
                         <div className="icon">
-                          <i className="flaticon-graphic-design" />
+                          <img
+                            src="assets/images/mockups/cruisecopter.jpg"
+                            alt=""
+                          />
                         </div>
                         <div className="content">
                           <h4>
@@ -394,7 +396,10 @@ const Index = () => {
                     <div className="col-lg-12 col-sm-6">
                       <div className="service-item style-three wow fadeInLeft delay-0-3s">
                         <div className="icon">
-                          <i className="flaticon-user-experience" />
+                          <img
+                            src="assets/images/mockups/multiflot.jpg"
+                            alt=""
+                          />
                         </div>
                         <div className="content">
                           <h4>
@@ -433,7 +438,10 @@ const Index = () => {
         <RecentProjects />
         {/* Project Area end */}
         {/* CTA Area start */}
-        <section className="call-to-action-area rel z-2">
+        <section
+          className="call-to-action-area rel z-2"
+          style={{ paddingBottom: "2rem" }}
+        >
           <div className="container">
             <div
               className="cta-inner bgs-cover"
@@ -473,150 +481,6 @@ const Index = () => {
           </div>
         </section>
         {/* CTA Area end */}
-        {/* Pricing Two Area start */}
-        <section className="pricing-area-two bgc-lighter pt-240 pb-100 rel z-1">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-10">
-                <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-                  <span className="sub-title mb-15">Our Pricing Package</span>
-                  <h2>Website Design Packages</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="pricing-item-two wow fadeInUp delay-0-2s">
-                  <h4 className="title">Basic Plan</h4>
-                  <span className="badge">popular package</span>
-                  <div className="pricing-inner">
-                    <ul className="list-style-two">
-                      <li>Landing page design (10 pages)</li>
-                      <li>HTML+CSS design (12 pages)</li>
-                      <li>Social Media Marketing</li>
-                      <li>Domin hosting provider</li>
-                      <li>Online support (24/7)</li>
-                    </ul>
-                    <div className="price-and-btn">
-                      <div className="content">
-                        <span className="price">248</span>
-                        <span className="save">
-                          Save<span> 25%</span>
-                        </span>
-                        <Link href="/pricing">
-                          <a className="theme-btn style-three">
-                            Choose Package{" "}
-                            <i className="fas fa-angle-double-right" />
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item-two wow fadeInUp delay-0-4s">
-                  <h4 className="title">Standard plan</h4>
-                  <span className="badge">popular package</span>
-                  <div className="pricing-inner">
-                    <ul className="list-style-two">
-                      <li>Landing page design (10 pages)</li>
-                      <li>HTML+CSS design (12 pages)</li>
-                      <li>Social Media Marketing</li>
-                      <li>Domin hosting provider</li>
-                      <li>Online support (24/7)</li>
-                    </ul>
-                    <div className="price-and-btn">
-                      <div className="content">
-                        <span className="price">352</span>
-                        <span className="save">
-                          Save<span> 25%</span>
-                        </span>
-                        <Link href="/pricing">
-                          <a className="theme-btn style-three">
-                            Choose Package{" "}
-                            <i className="fas fa-angle-double-right" />
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item-two wow fadeInUp delay-0-2s">
-                  <h4 className="title">golder Plan</h4>
-                  <span className="badge">popular package</span>
-                  <div className="pricing-inner">
-                    <ul className="list-style-two">
-                      <li>Landing page design (10 pages)</li>
-                      <li>HTML+CSS design (12 pages)</li>
-                      <li>Social Media Marketing</li>
-                      <li>Domin hosting provider</li>
-                      <li>Online support (24/7)</li>
-                    </ul>
-                    <div className="price-and-btn">
-                      <div className="content">
-                        <span className="price">583</span>
-                        <span className="save">
-                          Save<span> 25%</span>
-                        </span>
-                        <Link href="/pricing">
-                          <a className="theme-btn style-three">
-                            Choose Package{" "}
-                            <i className="fas fa-angle-double-right" />
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="pricing-item-two wow fadeInUp delay-0-4s">
-                  <h4 className="title">platinum Plan</h4>
-                  <span className="badge">popular package</span>
-                  <div className="pricing-inner">
-                    <ul className="list-style-two">
-                      <li>Landing page design (10 pages)</li>
-                      <li>HTML+CSS design (12 pages)</li>
-                      <li>Social Media Marketing</li>
-                      <li>Domin hosting provider</li>
-                      <li>Online support (24/7)</li>
-                    </ul>
-                    <div className="price-and-btn">
-                      <div className="content">
-                        <span className="price">834</span>
-                        <span className="save">
-                          Save<span> 25%</span>
-                        </span>
-                        <Link href="/pricing">
-                          <a className="theme-btn style-three">
-                            Choose Package{" "}
-                            <i className="fas fa-angle-double-right" />
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="pricing-shapes">
-            <img
-              className="shape dots"
-              src="assets/images/shapes/pricing-bg-dots.png"
-              alt="Shape"
-            />
-            <img
-              className="shape wave"
-              src="assets/images/shapes/pricing-wave-line.png"
-              alt="Shape"
-            />
-          </div>
-        </section>
-        {/* Pricing Two Area end */}
         {/* Testimonial Area Start */}
         <ClientsFeedback />
         {/* Testimonial Area End */}
@@ -761,102 +625,42 @@ const Index = () => {
               </div>
             </div>
             <div className="row large-gap">
-              <div className="col-lg-6">
-                <div className="blog-item wow fadeInUp delay-0-2s">
-                  <div className="image">
-                    <img src="assets/images/blog/blog1.jpg" alt="Blog" />
-                  </div>
-                  <div className="content">
-                    <span className="date">
-                      <i className="far fa-calendar-alt" /> 25 March 2022
-                    </span>
-                    <h4>
-                      <Link href="/blog-details">
-                        <a>Easy Ways to Incorporate Customer Feedback</a>
-                      </Link>
-                    </h4>
-                    <div className="author">
-                      <img src="assets/images/blog/author1.jpg" alt="Author" />
-                      <div className="post-by">
-                        <span>Post by</span>
-                        <a href="#">Douglas B. Dickens</a>
+              {blogData.map((item, index) => {
+                return (
+                  <>
+                    <div className="col-lg-6">
+                      <div className="blog-item wow fadeInUp delay-0-2s">
+                        <div className="image">
+                          <img src={item.image} alt="Blog" />
+                        </div>
+                        <div className="content">
+                          <span className="date">
+                            <i className="far fa-calendar-alt" /> {item.date}
+                          </span>
+                          <h4>
+                            <Link href="/blog-details">
+                              <a>{item.title}</a>
+                            </Link>
+                          </h4>
+                          <div className="author">
+                            <img
+                              style={{
+                                objectFit: "contain",
+                              }}
+                              src={item.authorImage}
+                              alt="Author"
+                            />
+                            <div className="post-by">
+                              <span>Post by</span>
+                              <a href="#">{item.author}</a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="blog-item wow fadeInUp delay-0-4s">
-                  <div className="image">
-                    <img src="assets/images/blog/blog2.jpg" alt="Blog" />
-                  </div>
-                  <div className="content">
-                    <span className="date">
-                      <i className="far fa-calendar-alt" /> 27 March 2022
-                    </span>
-                    <h4>
-                      <Link href="/blog-details">
-                        <a>How to create modern web site for your business?</a>
-                      </Link>
-                    </h4>
-                    <div className="author">
-                      <img src="assets/images/blog/author2.jpg" alt="Author" />
-                      <div className="post-by">
-                        <span>Post by</span>
-                        <a href="#">Carson C. Rhodes</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="blog-item wow fadeInUp delay-0-2s">
-                  <div className="image">
-                    <img src="assets/images/blog/blog3.jpg" alt="Blog" />
-                  </div>
-                  <div className="content">
-                    <span className="date">
-                      <i className="far fa-calendar-alt" /> 25 March 2022
-                    </span>
-                    <h4>
-                      <Link href="/blog-details">
-                        <a>How to digital marketing work social networking?</a>
-                      </Link>
-                    </h4>
-                    <div className="author">
-                      <img src="assets/images/blog/author3.jpg" alt="Author" />
-                      <div className="post-by">
-                        <span>Post by</span>
-                        <a href="#">Robert T. Evans</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="blog-item wow fadeInUp delay-0-4s">
-                  <div className="image">
-                    <img src="assets/images/blog/blog4.jpg" alt="Blog" />
-                  </div>
-                  <div className="content">
-                    <span className="date">
-                      <i className="far fa-calendar-alt" /> 25 March 2022
-                    </span>
-                    <h4>
-                      <Link href="/blog-details">
-                        <a>Easy Ways to Incorporate Customer Feedback</a>
-                      </Link>
-                    </h4>
-                    <div className="author">
-                      <img src="assets/images/blog/author4.jpg" alt="Author" />
-                      <div className="post-by">
-                        <span>Post by</span>
-                        <a href="#">Stanley J. Contreras</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  </>
+                );
+              })}
             </div>
           </div>
         </section>

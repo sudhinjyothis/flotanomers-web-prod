@@ -105,13 +105,13 @@ const Header1 = () => {
                 </a>
               </Link>
               {/* menu sidbar */}
-              <div className="menu-sidebar d-none d-lg-block">
+              {/* <div className="menu-sidebar d-none d-lg-block">
                 <button onClick={() => sideBarToggle()}>
                   <span className="icon-bar" />
                   <span className="icon-bar" />
                   <span className="icon-bar" />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
