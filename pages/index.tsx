@@ -15,7 +15,13 @@ const Index = () => {
   const [hover, setHover] = React.useState(-1);
   return (
     <Fragment>
-      <Layout header={1} className="home-one" footer={1} noHeader={undefined}>
+      <Layout
+        header={1}
+        className="home-one"
+        footer={1}
+        noHeader={undefined}
+        SideBar={null}
+      >
         {/*End Hidden Sidebar */}
         {/* Slider Section Start */}
         <Hero1 />
@@ -313,7 +319,7 @@ const Index = () => {
                   <div className="image wow fadeInUp delay-0-2s">
                     <img
                       className="round"
-                      src="assets/images/features/feature-middle.png"
+                      src="assets/images/features/feature-middle.jpg"
                       alt="Feature Middle"
                     />
                   </div>

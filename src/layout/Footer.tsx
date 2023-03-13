@@ -98,7 +98,7 @@ const Footer1 = () => (
             <h4 className="footer-title">Newsletter</h4>
             <p>Sing up to get more every updates</p>
             <form onSubmit={(e) => e.preventDefault()} action="#">
-              <input type="email" placeholder="Enter email" required />
+              <input style={{width : "100%"}} type="email" placeholder="Enter email" required />
               <button className="theme-btn">
                 Subscribe Now <i className="fas fa-angle-double-right" />
               </button>
