@@ -5,7 +5,7 @@ import Layout from "../../../src/layout/Layout";
 import PageBanner from "../../../src/layout/PageBanner";
 export default function blogDetail({ blog }) {
   return (
-    <Layout header={1} className="" footer={1} noHeader={undefined}>
+    <Layout header={1} className="" footer={1} noHeader={undefined} SideBar={undefined}>
       <PageBanner titleHtml={`<span>Blog</span>`} titleText="Blog" />
       <section className="blog-details-area py-130 rel z-1">
         <div className="container">
