@@ -6,6 +6,7 @@ const ProjectsCreative = () => {
   return (
     <Layout
     header={1} className="" footer={1} noHeader={undefined}
+    SideBar={undefined}
     >
       <PageBanner
         titleHtml={`Project Cre<span>ative</span>`}

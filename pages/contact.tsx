@@ -3,7 +3,7 @@ import PageBanner from "../src/layout/PageBanner";
 import React from "react";
 const Contact = () => {
   return (
-    <Layout header={1} className="" footer={1} noHeader={undefined}>
+    <Layout header={1} className="" footer={1} noHeader={undefined} SideBar={undefined}>
       <PageBanner titleHtml={`Conta<span>ct Us</span>`} titleText="Contact" />
       <section
         style={{

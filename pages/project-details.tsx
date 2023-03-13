@@ -8,6 +8,7 @@ const ProjectsDetails = () => {
   return (
     <Layout
     header={1} className="" footer={1} noHeader={undefined}
+    SideBar={undefined}
     >
       <PageBanner
         titleHtml={`Project D<span>etails</span>`}

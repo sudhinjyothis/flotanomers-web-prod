@@ -7,6 +7,7 @@ const Blog = () => {
   return (
     <Layout
     header={1} className="" footer={1} noHeader={undefined}
+    SideBar={undefined}
     >
       <PageBanner
         titleHtml={`Blog Grid <span>View</span>`}

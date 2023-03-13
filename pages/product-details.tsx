@@ -7,6 +7,7 @@ const ProductDetails = () => {
   return (
     <Layout
     header={1} className="" footer={1} noHeader={undefined}
+    SideBar={undefined}
     >
       <PageBanner
         titleHtml={`Product De<span>tails</span>`}

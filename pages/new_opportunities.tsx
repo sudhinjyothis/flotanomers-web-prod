@@ -3,7 +3,7 @@ import Layout from "../src/layout/Layout";
 import PageBanner from "../src/layout/PageBanner";
 export default function Training() {
   return (
-    <Layout  header={1} className="home-one" footer={1} noHeader={undefined}>
+    <Layout  header={1} className="home-one" footer={1} noHeader={undefined} SideBar={undefined}>
       <PageBanner titleHtml={`New Opportunities`} titleText="New opportunities" />
 
         <section className="new_opportunities">

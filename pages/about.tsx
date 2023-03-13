@@ -7,7 +7,7 @@ import PageBanner from "../src/layout/PageBanner";
 import { feedbackActive, teamSliderActive } from "../src/sliderProps";
 const About = () => {
   return (
-    <Layout header={1} className="" footer={1} noHeader={undefined}>
+    <Layout header={1} className="" footer={1} noHeader={undefined} SideBar={undefined}>
       <PageBanner titleHtml={`About<span> Us</span>`} titleText="About Us" />
       <section className="ww-do-two-area py-130 rel z-1">
         <div className="container">

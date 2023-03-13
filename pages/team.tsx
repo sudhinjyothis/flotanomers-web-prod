@@ -14,6 +14,7 @@ const Team = () => {
   return (
     <Layout
     header={1} className="" footer={1} noHeader={undefined}
+    SideBar={undefined}
     >
       <PageBanner
         titleHtml={`Expert <span>Team</span>`}

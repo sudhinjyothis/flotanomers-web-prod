@@ -4,7 +4,7 @@ import Layout from "../src/layout/Layout";
 import PageBanner from "../src/layout/PageBanner";
 export default function Prodcuts() {
   return (
-    <Layout  header={1} className="home-one" footer={1} noHeader={undefined}>
+    <Layout  header={1} className="home-one" footer={1} noHeader={undefined} SideBar={undefined}>
         <PageBanner titleHtml={`Products`} titleText="Products" />
         <div className="container_main">
             <div className="text_about">We provide aerial solutions for hobby, GIS and Agricultural sectors. The products are indigenously designed and custom assembled.</div>
