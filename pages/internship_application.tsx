@@ -4,7 +4,7 @@ import Layout from "../src/layout/Layout";
 import PageBanner from "../src/layout/PageBanner";
 export default function Application() {
   return (
-    <Layout header={1} className="home-one" footer={1} noHeader={undefined}>
+    <Layout header={1} className="home-one" footer={1} noHeader={undefined} SideBar={undefined}> 
         <PageBanner titleHtml={`Internship Application`} titleText="Internship Application" />
         <div className="application_form">
             <div className="contact">

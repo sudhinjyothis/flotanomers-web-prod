@@ -7,7 +7,13 @@ import PageBanner from "../src/layout/PageBanner";
 import { feedbackActive, teamSliderActive } from "../src/sliderProps";
 const About = () => {
   return (
-    <Layout header={1} className="" footer={1} noHeader={undefined}>
+    <Layout
+      header={1}
+      className=""
+      footer={1}
+      noHeader={undefined}
+      SideBar={undefined}
+    >
       <PageBanner titleHtml={`About<span> Us</span>`} titleText="About Us" />
       <section className="ww-do-two-area py-130 rel z-1">
         <div className="container">
@@ -16,13 +22,14 @@ const About = () => {
               <div className="ww-do-two-content rmb-65 wow fadeInUp delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title style-two mb-15">What We Do</span>
-                  <h2>We are Professional Digital Team</h2>
+                  <h2>We are Professional Aerospace Team</h2>
                 </div>
                 <p>
-                  Start from scratch or choose from over 500 designer-made
-                  templates that you can fully customize using the drag and drop
-                  website builder. Make your site come to life with video
-                  backgrounds
+                  Flotanomers R&D Pvt Ltd is a UAV-based startup in Mangalore,
+                  Karnataka, out of sheer passion for innovation in the field of
+                  aerials and robotics. They are committed to indigenously
+                  developing “Make in India” relevant aerial and robotic
+                  solutions by fostering a culture of innovation and creativity.
                 </p>
                 <div className="row pt-15">
                   <div className="col-sm-6">
@@ -30,7 +37,7 @@ const About = () => {
                       <div className="icon">
                         <i className="fas fa-check" />
                       </div>
-                      <h5>Customize Website</h5>
+                      <h5>Aerial Mapping & Surveying</h5>
                       <p>
                         Pick a template customize anything answer or question
                         website design just you.
@@ -42,7 +49,19 @@ const About = () => {
                       <div className="icon">
                         <i className="fas fa-check" />
                       </div>
-                      <h5>Premium Design</h5>
+                      <h5>Geographic Information System</h5>
+                      <p>
+                        Start your own blog, add an online store and accept
+                        bookings online always.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="feature-item-two color-two">
+                      <div className="icon">
+                        <i className="fas fa-check" />
+                      </div>
+                      <h5>Infrastructure Inspection</h5>
                       <p>
                         Start your own blog, add an online store and accept
                         bookings online always.
@@ -51,9 +70,9 @@ const About = () => {
                   </div>
                 </div>
                 <div className="ww-do-btns">
-                  <Link href="/about">
+                  <Link href="/services">
                     <a className="theme-btn mt-15">
-                      Create Your Website{" "}
+                      Services
                       <i className="fas fa-angle-double-right" />
                     </a>
                   </Link>
@@ -90,8 +109,8 @@ const About = () => {
                   </div>
                 </div>
                 <div className="year-of-experience wow zoomIn delay-0-6s">
-                  <span className="number">25</span>
-                  Years Of Web Experience
+                  <span className="number">5</span>
+                  Years Of Experience
                 </div>
               </div>
             </div>
@@ -112,29 +131,31 @@ const About = () => {
               <div className="col-xl-3 col-sm-6">
                 <div className="counter-item mt-30 counter-text-wrap wow fadeInLeft delay-0-2s">
                   <i className="flaticon-startup" />
-                  <Counter end={2365} decimals={undefined} />
-                  <span className="counter-title">Projects complete</span>
+                  <Counter end={10000} decimals={undefined} />
+                  <span className="counter-title">Sq Km Surveyed</span>
                 </div>
               </div>
               <div className="col-xl-3 col-sm-6">
                 <div className="counter-item for-margin counter-text-wrap wow fadeInLeft delay-0-4s">
                   <i className="flaticon-global" />
-                  <Counter end={9632} decimals={undefined} />
-                  <span className="counter-title">Trusted Global Clients</span>
+                  <Counter end={4000} decimals={undefined} />
+                  <span className="counter-title">Students Trained</span>
                 </div>
               </div>
               <div className="col-xl-3 col-sm-6">
                 <div className="counter-item mt-20 counter-text-wrap wow fadeInLeft delay-0-6s">
                   <i className="flaticon-rating" />
-                  <Counter end={2365} decimals={undefined} />
-                  <span className="counter-title">Expert Team Member</span>
+                  <Counter end={5000} decimals={undefined} />
+                  <span className="counter-title">Training Hours</span>
                 </div>
               </div>
               <div className="col-xl-3 col-sm-6">
                 <div className="counter-item for-margin counter-text-wrap wow fadeInLeft delay-0-8s">
                   <i className="flaticon-trophy" />
-                  <Counter end={6763} decimals={undefined} />
-                  <span className="counter-title">Projects complete</span>
+                  <Counter end={200} decimals={undefined} />
+                  <span className="counter-title">
+                    Law And Enforcement Trained
+                  </span>
                 </div>
               </div>
             </div>
@@ -162,17 +183,17 @@ const About = () => {
               <div className="video-content text-white pb-95 rpb-115 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
                   <h2>
-                    25 years of experience in this world, being the first and
-                    foremost choice of business people.
+                    5 years of experience in this world, being the first and
+                    foremost aerospace company in Mangalore.
                   </h2>
                 </div>
                 <ul className="list-style-three">
-                  <li>An abundance of resources</li>
-                  <li>Add advanced features</li>
-                  <li>Support that Helps</li>
-                  <li>Edit your mobile view</li>
-                  <li>State of the art security</li>
-                  <li>Optimize search engines</li>
+                  <li>Certification Courses</li>
+                  <li>Services</li>
+                  <li>Research And Development</li>
+                  <li>Drone Accessories</li>
+                  <li>DGCA Approved RPTO Training</li>
+                  <li>Hobby and Professional Products</li>
                 </ul>
               </div>
             </div>
@@ -396,72 +417,8 @@ const About = () => {
         </div>
       </section>
       {/* Team Area end */}
-      {/* Feature Six Area start */}
-      <section className="freature-area-six rel z-2">
-        <div className="container">
-          <div
-            className="feature-six-inner bgs-cover bgc-primary"
-            style={{
-              backgroundImage:
-                "url(assets/images/background/freature-bg-line.png)",
-            }}
-          >
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="feature-item-three wow fadeInRight delay-0-3s">
-                  <i className="flaticon-technical-support" />
-                  <div className="content">
-                    <h4>Customize your site</h4>
-                    <p>
-                      Sit amet consectetur adipiscing sed eiusmod tempor
-                      incididunt labore et dolore magnaes epsums
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="feature-item-three color-two wow fadeInRight delay-0-5s">
-                  <i className="flaticon-app-development" />
-                  <div className="content">
-                    <h4>Edit your mobile view</h4>
-                    <p>
-                      Sit amet consectetur adipiscing sed eiusmod tempor
-                      incididunt labore et dolore magnaes epsums
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="feature-item-three color-three wow fadeInRight delay-0-4s">
-                  <i className="flaticon-settings" />
-                  <div className="content">
-                    <h4>Add advanced features</h4>
-                    <p>
-                      Sit amet consectetur adipiscing sed eiusmod tempor
-                      incididunt labore et dolore magnaes epsums
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="feature-item-three color-four wow fadeInRight delay-0-6s">
-                  <i className="flaticon-optimization" />
-                  <div className="content">
-                    <h4>Optimize for search engines</h4>
-                    <p>
-                      Sit amet consectetur adipiscing sed eiusmod tempor
-                      incididunt labore et dolore magnaes epsums
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Feature Six Area end */}
       {/* Feedback Area start */}
-      <section className="feedback-area bgc-lighter pt-250 pb-130 rel z-1">
+      <section className="feedback-area bgc-lighter  pb-130 rel z-1">
         <div className="container pt-130">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8">

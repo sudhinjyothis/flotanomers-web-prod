@@ -55,6 +55,7 @@ const Faq = () => {
   return (
     <Layout
     header={1} className="" footer={1} noHeader={undefined}
+    SideBar={undefined}
     >
       <PageBanner
         titleHtml={`Faq & <span>Help</span>`}
