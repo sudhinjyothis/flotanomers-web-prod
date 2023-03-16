@@ -1,4 +1,3 @@
-
 *,
 html {
   scroll-behavior: smooth !important;
@@ -65,4 +64,5 @@ html {
 .hero-features-icon.hover {
   color: #fff;
 }
+
 

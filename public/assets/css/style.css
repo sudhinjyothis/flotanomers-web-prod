@@ -7566,12 +7566,7 @@ h6,
   font-family: "Merriweather", serif;
 }
 .price-and-btn .price:before {
-  content: "$";
-}
-.price-and-btn .price:after {
-  color: white;
-  font-size: 18px;
-  content: "/monthly";
+  content: "₹";
 }
 .price-and-btn .save {
   display: block;
@@ -7862,7 +7857,6 @@ h6,
   margin-bottom: 25px;
   display: inline-block;
   padding: 15px 20px 5px;
-  background: url(../images/shapes/pricing-title-bg.png) no-repeat 100%/100%;
 }
 .pricing-plan-three .list-style-two {
   margin-bottom: 35px;
@@ -11702,9 +11696,10 @@ button:focus {
   border-left: 0.5px solid #c4c4c4;
   height: 20px;
 }
+
 .registration-form {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   grid-row-gap: 2rem;
   grid-column-gap: 4rem;
 }
@@ -11712,4 +11707,15 @@ button:focus {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .registration-form {
+    grid-template-columns: 1fr;
+  }
+  input {
+   
+    width: 250px;
+   
+  }
 }

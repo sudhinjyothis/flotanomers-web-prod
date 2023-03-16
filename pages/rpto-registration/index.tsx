@@ -1,8 +1,70 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 function Registration() {
+  const [disabled, setDisabled] = React.useState(false);
+  function loadScript(src: string) {
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = () => {
+        resolve(true);
+      };
+      script.onerror = () => {
+        resolve(false);
+      };
+      document.body.appendChild(script);
+    });
+  }
+  async function displayRazorpay(order: any, resetForm: any) {
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js"
+    );
+
+    if (!res) {
+      alert("Razorpay SDK failed to load. Are you online?");
+      return;
+    }
+
+    // creating a new order
+
+    // Getting the order details back
+
+    const options = {
+      key: "rzp_test_iETuTIhZn6FzfF", // Enter the Key ID generated from the Dashboard
+      amount: order.amount.toString(),
+      currency: "INR",
+      name: "Flotanomers R&D Pvt Ltd",
+      description: " ",
+      image:
+        "https://static.wixstatic.com/media/b01c62_bc359f338bd24628bb3dc5dff12ecae9~mv2.png/v1/crop/x_0,y_653,w_3509,h_1197/fill/w_300,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/full%20logo%20png.png",
+      order_id: order.id,
+      handler: async function (response) {
+        console.log(response);
+
+        axios
+          .post(`http://localhost:3000/api/payment/verify`, {
+            ...response,
+            ...order,
+          })
+          .then((result) => {
+            if (result.data.signatureIsValid) {
+              toast.success("Registration Successful");
+              resetForm();
+              setDisabled(false);
+            }
+          });
+      },
+      theme: {
+        color: "#61dafb",
+      },
+    };
+
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  }
   const TextArea = (props) => <textarea type="text" {...props} />;
   const phoneRegex =
     /((\+*)((0[ -]*)*|((91 )*))((\d{12})+|(\d{10})+))|\d{5}([- ]*)\d{6}/;
@@ -12,7 +74,9 @@ function Registration() {
       .max(50, "Too Long!")
       .required("Required"),
     email: Yup.string().email("Invalid email").required("Required"),
-    phoneNumber: Yup.string().matches(phoneRegex, "Phone number is not valid").required("Required"),
+    phoneNumber: Yup.string()
+      .matches(phoneRegex, "Phone number is not valid")
+      .required("Required"),
     maximumQualification: Yup.string().required("Required"),
     aadharNumber: Yup.string().required("Required"),
     organizationName: Yup.string(),
@@ -20,7 +84,23 @@ function Registration() {
     course: Yup.string().required("Required"),
   });
   return (
-    <section>
+    <section
+      style={{
+        padding: "2rem",
+      }}
+    >
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div
         style={{
           display: "flex",
@@ -65,9 +145,17 @@ function Registration() {
             course: "",
           }}
           validationSchema={RegistrationSchema}
-          onSubmit={(values) => {
+          onSubmit={(values, { resetForm }) => {
             // same shape as initial values
-            console.log(values);
+            setDisabled(true);
+            axios
+              .post(
+                `http://localhost:3000/api/payment/create-course-pay`,
+                values
+              )
+              .then((result) => {
+                displayRazorpay(result.data, resetForm);
+              });
           }}
         >
           {({ errors, touched }) => (
@@ -346,8 +434,8 @@ function Registration() {
                   ) : null}
                 </div>
               </div>
-
               <button
+                disabled={disabled}
                 style={{
                   backgroundColor: "#FFC614",
                   color: "#000",
