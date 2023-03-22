@@ -45,11 +45,11 @@ const TeamIsotope = () => {
           Show All
         </li>
         <li
-          className={`c-pointer ${activeBtn("desiger")}`}
-          onClick={handleFilterKeyChange("desiger")}
-          data-filter=".desiger"
+          className={`c-pointer ${activeBtn("product")}`}
+          onClick={handleFilterKeyChange("product")}
+          data-filter=".product"
         >
-          Desiger
+          Product Development
         </li>
         <li
           className={`c-pointer ${activeBtn("developer")}`}
@@ -81,10 +81,15 @@ const TeamIsotope = () => {
         </li>
       </ul>
       <div className="row team-active justify-content-center">
-        <div className="col-xl-3 col-lg-4 col-md-6 item developer seo-expert">
+        <div className="col-xl-3 col-lg-4 col-md-6 item product seo-expert">
           <div className="team-member">
             <div className="image">
-              <img src="assets/images/team/member1.jpg" alt="Member" />
+              <img src="assets/images/team/manjunath-bhandary.webp" style={{
+                width: "180px",
+                height: "180px",
+                objectFit: "cover",
+
+              }} alt="Member" />
             </div>
             <div className="content">
               <h5>
