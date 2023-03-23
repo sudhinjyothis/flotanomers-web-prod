@@ -24,26 +24,46 @@ export default async function handler(req, res) {
       permanentAddress,
       course,
     } = req.body;
-    const orderId = generateUniqueId();
-    const order = await db.collection("rpto-registration").add({
-      fullName,
-      email,
-      phoneNumber,
-      maximumQualification,
-      aadharNumber,
-      organizationName,
-      permanentAddress,
-      course,
-      paymentStatus: "pending",
-      paymentId: orderId,
-    });
-    var options = {
-      amount: 7900000, // amount in the smallest currency unit
-      currency: "INR",
-      receipt: orderId,
-    };
-    const razorpayOrder = await instance.orders.create(options);
-    res.status(200).json(razorpayOrder);
+    const verifyExisting = await db
+      .collection("rpto-registration")
+      .where("email", "==", email)
+      .limit(1)
+      .get();
+    if (verifyExisting.docs[0]?.data() === undefined) {
+      const orderId = generateUniqueId();
+      const order = await db.collection("rpto-registration").add({
+        fullName,
+        email,
+        phoneNumber,
+        maximumQualification,
+        aadharNumber,
+        organizationName,
+        permanentAddress,
+        course,
+        paymentStatus: "pending",
+        paymentId: orderId,
+      });
+
+      var options = {
+        amount: 7900000, // amount in the smallest currency unit
+        currency: "INR",
+        receipt: orderId,
+      };
+      const razorpayOrder = await instance.orders.create(options);
+      res.status(200).json(razorpayOrder);
+    } else {
+      if (verifyExisting.docs[0]?.data().paymentStatus === "pending") {
+        var orderId: string = verifyExisting.docs[0]?.data().paymentId;
+        var options = {
+          amount: 7900000, // amount in the smallest currency unit
+          currency: "INR",
+          receipt: orderId,
+        };
+        const razorpayOrder = await instance.orders.create(options);
+        res.status(200).json(razorpayOrder);
+      }
+      res.status(201).json({ message: "already registered" });
+    }
   } else {
     res.status(401).json({ message: "Invalid Request" });
   }

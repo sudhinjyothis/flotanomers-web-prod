@@ -37,7 +37,7 @@ export default async function handler(req, res) {
           });
         });
       res.send(response);
-    } catch (err) {
+    } catch (err) { 
       console.log(err);
     }
   }

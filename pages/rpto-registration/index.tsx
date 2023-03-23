@@ -154,7 +154,11 @@ function Registration() {
                 values
               )
               .then((result) => {
-                displayRazorpay(result.data, resetForm);
+                if (result.data.message === "already registered") {
+                  toast.error("Already Registered");
+                } else {
+                  displayRazorpay(result.data, resetForm);
+                }
               });
           }}
         >
@@ -435,10 +439,8 @@ function Registration() {
                 </div>
               </div>
               <button
-                disabled={disabled}
+                className="rpto-sub-btn"
                 style={{
-                  backgroundColor: "#FFC614",
-                  color: "#000",
                   border: "none",
                   paddingLeft: "2rem",
                   paddingRight: "2rem",
