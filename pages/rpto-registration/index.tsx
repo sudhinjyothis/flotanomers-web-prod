@@ -18,7 +18,7 @@ function Registration() {
       document.body.appendChild(script);
     });
   }
-  async function displayRazorpay(order: any, resetForm: any) {
+  async function displayRazorpay(order: any, resetForm: any, toastId: any) {
     const res = await loadScript(
       "https://checkout.razorpay.com/v1/checkout.js"
     );
@@ -51,7 +51,11 @@ function Registration() {
           })
           .then((result) => {
             if (result.data.signatureIsValid) {
-              toast.success("Registration Successful");
+              toast.update(toastId, {
+                render: "Registration Successful",
+                type: "success",
+                autoClose: 5000,
+              });
               resetForm();
               setDisabled(false);
             }
@@ -147,6 +151,9 @@ function Registration() {
           validationSchema={RegistrationSchema}
           onSubmit={(values, { resetForm }) => {
             // same shape as initial values
+            const toastId = toast.info("Please wait...", {
+              autoClose: false,
+            });
             setDisabled(true);
             axios
               .post(
@@ -155,9 +162,13 @@ function Registration() {
               )
               .then((result) => {
                 if (result.data.message === "already registered") {
-                  toast.error("Already Registered");
+                  toast.update(toastId, {
+                    render: "Already Registered",
+                    type: "error",
+                    autoClose: 5000,
+                  });
                 } else {
-                  displayRazorpay(result.data, resetForm);
+                  displayRazorpay(result.data, resetForm, toastId);
                 }
               });
           }}
