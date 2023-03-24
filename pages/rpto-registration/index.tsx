@@ -45,7 +45,7 @@ function Registration() {
         console.log(response);
 
         axios
-          .post(`http://localhost:3000/api/payment/verify`, {
+          .post(`https://beta-flotanomers.vercel.app/api/payment/verify`, {
             ...response,
             ...order,
           })
@@ -150,7 +150,7 @@ function Registration() {
             setDisabled(true);
             axios
               .post(
-                `http://localhost:3000/api/payment/create-course-pay`,
+                `https://beta-flotanomers.vercel.app/api/payment/create-course-pay`,
                 values
               )
               .then((result) => {
