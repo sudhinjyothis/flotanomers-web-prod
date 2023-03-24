@@ -151,7 +151,7 @@ function Registration() {
           validationSchema={RegistrationSchema}
           onSubmit={(values, { resetForm }) => {
             // same shape as initial values
-            const toastId = toast.info("Please wait...", {
+            const toastId = toast.loading("Please wait...", {
               autoClose: false,
             });
             setDisabled(true);
